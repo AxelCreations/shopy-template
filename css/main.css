@@ -1,0 +1,158 @@
+/*
+	General Classes to the Complete Site.
+==============================================================*/
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+body {
+  background-color: #f4f6f8;
+  color: #34404b;
+}
+body h2 {
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+body h2 span {
+  color: #ff5912;
+}
+/*	End of General Classes
+--------------------------------*/
+/*
+	Home Template Classes 
+==============================================================*/
+#main {
+  height: 650px;
+}
+#main #navigation {
+  background: #fff;
+  height: 180px;
+}
+#main #navigation #nav-info {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  height: 60px;
+}
+#main #navigation #nav-info ul {
+  color: #34404b;
+  width: 100%;
+}
+#main #navigation #nav-info ul li {
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+#main #navigation #nav-info ul li .contact-icons {
+  bottom: -4px;
+  color: #ff5912;
+  font-size: 1.3em;
+  position: relative;
+}
+#main #navigation #nav-info ul li img {
+  position: relative;
+  top: -1px;
+}
+#main #navigation #nav-info ul .social-icons {
+  bottom: -3px;
+  font-size: 1.2em;
+  position: relative;
+}
+#main #navigation #nav-info ul .social-icons span {
+  -webkit-transition: all ease 0.6s;
+  -moz-transition: all ease 0.6s;
+  -o-transition: all ease 0.6s;
+  -ms-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+  margin: 0 0.2em;
+}
+#main #navigation #nav-info ul .social-icons span:hover {
+  color: rgba(112,34,0,0.9);
+  font-size: 1.1em;
+}
+#main #navigation #main-menu {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  height: 120px;
+}
+#main #navigation #main-menu .row {
+  width: 100%;
+}
+#main #navigation #main-menu .main-menu-logo {
+  position: relative;
+  top: -8px;
+}
+#main #navigation #main-menu .menu {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+#main #navigation #main-menu .menu ul li {
+  cursor: pointer;
+  margin-right: 1em;
+}
+#main #navigation #main-menu .menu ul .active {
+  color: #ff5912;
+}
+#main #navigation #main-menu .main-menu-options {
+  padding-right: 0;
+}
+#main #navigation #main-menu .main-menu-options ul li {
+  cursor: pointer;
+  font-size: 1.3em;
+  margin-left: 0.7em;
+  position: relative;
+  -webkit-transition: all ease 0.6s;
+  -moz-transition: all ease 0.6s;
+  -o-transition: all ease 0.6s;
+  -ms-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+#main #navigation #main-menu .main-menu-options ul li .cart {
+  background: #34404b;
+  -webkit-background-clip: boerder-box;
+  -moz-background-clip: boerder-box;
+  background-clip: boerder-box;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.6em;
+  height: 17px;
+  left: 8px;
+  padding: 0.1em;
+  position: absolute;
+  text-align: center;
+  top: -13px;
+  width: 17px;
+}
+#main #navigation #main-menu .main-menu-options ul .rotate-search {
+  -webkit-transform: rotate(-85deg);
+  -moz-transform: rotate(-85deg);
+  -o-transform: rotate(-85deg);
+  -ms-transform: rotate(-85deg);
+  transform: rotate(-85deg);
+}
+/*	End of Home Template Classes
+--------------------------------*/

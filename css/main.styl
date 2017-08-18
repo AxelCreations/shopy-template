@@ -1,0 +1,138 @@
+@import nib
+
+/*
+	General Classes to the Complete Site.
+==============================================================*/
+
+::selection
+    background #b3d4fc
+    text-shadow none
+
+
+body
+	background-color rgb(244, 246, 248)
+	color rgb(52, 64, 75)
+
+	//Style to all Subtitle ind the Site.
+	h2
+		// color rgb(52, 64, 75)
+		font-weight 900
+		text-align center
+		text-transform uppercase
+		span
+			color rgb(255, 89, 18)
+
+
+/*	End of General Classes
+--------------------------------*/
+
+
+/*
+	Home Template Classes 
+==============================================================*/
+
+#main
+	height 650px
+	#navigation
+		background white
+		height 180px
+		
+		#nav-info
+			align-items center
+			display flex
+			height 60px
+
+			ul
+				color rgb(52, 64, 75)
+				width 100%
+
+				li
+					cursor pointer
+					font-size 0.8em
+					font-weight bold
+
+					.contact-icons
+						bottom -4px
+						color rgb(255, 89, 18)
+						font-size 1.3em
+						position relative				
+					img
+						position relative
+						top -1px
+
+				.social-icons
+					bottom -3px
+					font-size 1.2em
+					position relative
+					span
+						transition all ease 0.6s
+						margin 0 0.2em
+						&:hover
+							color rgba(#702200, .9)
+							font-size 1.1em
+
+		#main-menu
+			align-items center
+			display flex
+			height 120px
+
+			.row
+				width 100%
+				
+			.main-menu-logo
+				position relative 
+				top -8px
+			.menu
+				font-size 0.9em
+				font-weight 500
+				ul
+					li
+						cursor pointer
+						margin-right 1em
+					.active
+						color rgb(255, 89, 18)
+						
+			.main-menu-options
+				padding-right 0
+				ul
+					li
+						cursor pointer
+						font-size 1.3em
+						margin-left 0.7em
+						position relative
+						transition all ease 0.6s
+
+						.cart
+							background rgb(52, 64, 75)
+							background-clip boerder-box
+							border-radius 50%
+							color white
+							font-size 0.6em
+							height 17px
+							left 8px
+							padding 0.1em
+							position absolute
+							text-align center
+							top -13px
+							width 17px
+							
+					.rotate-search
+						transform rotate(-85deg)
+
+
+
+
+
+
+
+
+
+
+
+
+/*	End of Home Template Classes
+--------------------------------*/
+
+
+
+
