@@ -1,5 +1,7 @@
 @import nib
 
+naranja = rgb(255, 89, 18)
+
 /*
 	General Classes to the Complete Site.
 ==============================================================*/
@@ -20,7 +22,7 @@ body
 		text-align center
 		text-transform uppercase
 		span
-			color rgb(255, 89, 18)
+			color naranja
 
 
 /*	End of General Classes
@@ -32,7 +34,8 @@ body
 ==============================================================*/
 
 #main
-	height 650px
+	height 830px
+	position relative
 	#navigation
 		background white
 		height 180px
@@ -53,7 +56,7 @@ body
 
 					.contact-icons
 						bottom -4px
-						color rgb(255, 89, 18)
+						color naranja
 						font-size 1.3em
 						position relative				
 					img
@@ -65,11 +68,17 @@ body
 					font-size 1.2em
 					position relative
 					span
-						transition all ease 0.6s
 						margin 0 0.2em
+						position relative
 						&:hover
-							color rgba(#702200, .9)
-							font-size 1.1em
+							// display none
+							&::before
+								color rgba(naranja, .9)
+								font-size 1.3em
+								position relative
+
+						&::before
+							transition all ease 0.4s
 
 		#main-menu
 			align-items center
@@ -90,7 +99,7 @@ body
 						cursor pointer
 						margin-right 1em
 					.active
-						color rgb(255, 89, 18)
+						color naranja
 						
 			.main-menu-options
 				padding-right 0
@@ -109,7 +118,7 @@ body
 							color white
 							font-size 0.6em
 							height 17px
-							left 8px
+							left 9px
 							padding 0.1em
 							position absolute
 							text-align center
@@ -119,8 +128,81 @@ body
 					.rotate-search
 						transform rotate(-85deg)
 
+	#home
+		align-items center
+		color rgb(60, 71, 81)
+		height 650px
+		display flex
+		position relative
+		
+		.home-bg
+			height 100%
+			position absolute
+			width 100%
+		#promos
+			align-items center
+			display flex
+			height 200px
+			
+			.promos-controls
+				span
+					cursor pointer
+					display block
+					background white
+					height 17px
+					margin-bottom 0.8em
+					width 10px
+				.promo-selected
+					background naranja
+					height 36px
+			.promo
+				height 100%
+				margin 0
+				padding-right 0
+				position relative
+				&-title
+					h1
+						color naranja
+						font-size 3em
+						font-weight 900
+						margin 0 0 0.4em 0
+						text-transform uppercase
+				&-content
+					&-pack
+						p
+							font-size 1.2em
+							font-weight bold
+					&-description
+						p
+							color rgb(73, 86, 98)
+							font-size 1.1em
+				&-foot
+					align-items center
+					bottom 0
+					display flex
+					position absolute
+					&-price
+						margin-right 2em
+						p
+							font-weight 700
+							font-size 1.2em
+							margin 0
+					&-order
+						color naranja
+						p
+							font-size 1.2em
+							margin 0
+							span
+								position relative
+								top -3px
+								// 
 
 
+
+
+
+
+// #new-arrivals
 
 
 

@@ -27,7 +27,8 @@ body h2 span {
 	Home Template Classes 
 ==============================================================*/
 #main {
-  height: 650px;
+  height: 830px;
+  position: relative;
 }
 #main #navigation {
   background: #fff;
@@ -73,16 +74,20 @@ body h2 span {
   position: relative;
 }
 #main #navigation #nav-info ul .social-icons span {
-  -webkit-transition: all ease 0.6s;
-  -moz-transition: all ease 0.6s;
-  -o-transition: all ease 0.6s;
-  -ms-transition: all ease 0.6s;
-  transition: all ease 0.6s;
   margin: 0 0.2em;
+  position: relative;
 }
-#main #navigation #nav-info ul .social-icons span:hover {
-  color: rgba(112,34,0,0.9);
-  font-size: 1.1em;
+#main #navigation #nav-info ul .social-icons span:hover::before {
+  color: rgba(255,89,18,0.9);
+  font-size: 1.3em;
+  position: relative;
+}
+#main #navigation #nav-info ul .social-icons span::before {
+  -webkit-transition: all ease 0.4s;
+  -moz-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
+  -ms-transition: all ease 0.4s;
+  transition: all ease 0.4s;
 }
 #main #navigation #main-menu {
   -webkit-box-align: center;
@@ -140,7 +145,7 @@ body h2 span {
   color: #fff;
   font-size: 0.6em;
   height: 17px;
-  left: 8px;
+  left: 9px;
   padding: 0.1em;
   position: absolute;
   text-align: center;
@@ -153,6 +158,111 @@ body h2 span {
   -o-transform: rotate(-85deg);
   -ms-transform: rotate(-85deg);
   transform: rotate(-85deg);
+}
+#main #home {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  color: #3c4751;
+  height: 650px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  position: relative;
+}
+#main #home .home-bg {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+#main #home #promos {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  height: 200px;
+}
+#main #home #promos .promos-controls span {
+  cursor: pointer;
+  display: block;
+  background: #fff;
+  height: 17px;
+  margin-bottom: 0.8em;
+  width: 10px;
+}
+#main #home #promos .promos-controls .promo-selected {
+  background: #ff5912;
+  height: 36px;
+}
+#main #home #promos .promo {
+  height: 100%;
+  margin: 0;
+  padding-right: 0;
+  position: relative;
+}
+#main #home #promos .promo-title h1 {
+  color: #ff5912;
+  font-size: 3em;
+  font-weight: 900;
+  margin: 0 0 0.4em 0;
+  text-transform: uppercase;
+}
+#main #home #promos .promo-content-pack p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#main #home #promos .promo-content-description p {
+  color: #495662;
+  font-size: 1.1em;
+}
+#main #home #promos .promo-foot {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  bottom: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  position: absolute;
+}
+#main #home #promos .promo-foot-price {
+  margin-right: 2em;
+}
+#main #home #promos .promo-foot-price p {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0;
+}
+#main #home #promos .promo-foot-order {
+  color: #ff5912;
+}
+#main #home #promos .promo-foot-order p {
+  font-size: 1.2em;
+  margin: 0;
+}
+#main #home #promos .promo-foot-order p span {
+  position: relative;
+  top: -3px;
 }
 /*	End of Home Template Classes
 --------------------------------*/
