@@ -21,6 +21,9 @@ body h2 {
 body h2 span {
   color: #ff5912;
 }
+.container {
+  max-width: 90%;
+}
 /*	End of General Classes
 --------------------------------*/
 /*
@@ -195,18 +198,31 @@ body h2 span {
   display: box;
   display: flex;
   height: 200px;
+  overflow-x: auto;
 }
-#main #home #promos .promos-controls span {
+#main #home #promos .promos-controls .control {
   cursor: pointer;
   display: block;
   background: #fff;
   height: 17px;
   margin-bottom: 0.8em;
+  -webkit-transition: 0.4s all ease-in;
+  -moz-transition: 0.4s all ease-in;
+  -o-transition: 0.4s all ease-in;
+  -ms-transition: 0.4s all ease-in;
+  transition: 0.4s all ease-in;
   width: 10px;
+}
+#main #home #promos .promos-controls .control:hover {
+  background: #ff5912;
+  -webkit-box-shadow: -2px -2px 5px rgba(0,0,0,0.4);
+  box-shadow: -2px -2px 5px rgba(0,0,0,0.4);
 }
 #main #home #promos .promos-controls .promo-selected {
   background: #ff5912;
   height: 36px;
+  -webkit-box-shadow: -2px -2px 5px rgba(0,0,0,0.4);
+  box-shadow: -2px -2px 5px rgba(0,0,0,0.4);
 }
 #main #home #promos .promo {
   height: 100%;
@@ -263,6 +279,93 @@ body h2 span {
 #main #home #promos .promo-foot-order p span {
   position: relative;
   top: -3px;
+}
+#new-arrivals-section {
+  height: 830px;
+  position: relative;
+  overflow: hidden;
+}
+#new-arrivals-section .container #new-arrivals {
+  text-align: center;
+  position: relative;
+}
+#new-arrivals-section .container #new-arrivals-title h2 {
+  margin: 2.5em 0 0.7em 0;
+}
+#new-arrivals-section .container #new-arrivals-description {
+  margin-bottom: 5em;
+}
+#new-arrivals-section .container #new-arrivals-content {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  overflow-y: auto;
+  padding: 0.7em;
+}
+#new-arrivals-section .container #new-arrivals-content .new-arrival {
+  background: #fff;
+  height: 365px;
+  margin: 0.5em;
+  min-height: 365px;
+  min-width: 270px;
+  width: 270px;
+}
+#new-arrivals-section .container #new-arrivals-content .new-arrival-img {
+  padding-top: 2em;
+}
+#new-arrivals-section .container #new-arrivals-paging {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  height: 200px;
+}
+#new-arrivals-section .container #new-arrivals-paging .paging-controls {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  background: #fff;
+  height: 60px;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+#new-arrivals-section .container #new-arrivals-paging .paging-controls span {
+  background: #ff5912;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 8px;
+  margin: 0 0.2em;
+  width: 8px;
 }
 /*	End of Home Template Classes
 --------------------------------*/

@@ -1,5 +1,19 @@
 @import nib
 
+arrival-color-1-normal = "b2344b"
+arrival-color-1-fusia = "d364bd"
+arrival-color-1-purple = "a526c9"
+arrival-color-2-normal = "6d6d6e"
+arrival-color-2-blue = "3e57a2"
+arrival-color-2-brown = "6b3828"
+arrival-color-3-normal = "847153"
+arrival-color-3-black = "black"
+arrival-color-3-gray = "909090"
+arrival-color-4-normal = "bd3a40"
+arrival-color-4-black = "515151"
+arrival-color-4-blue = "3e81aa"
+arrival-color-4-green = "3dad3d"
+
 naranja = rgb(255, 89, 18)
 
 /*
@@ -9,7 +23,6 @@ naranja = rgb(255, 89, 18)
 ::selection
     background #b3d4fc
     text-shadow none
-
 
 body
 	background-color rgb(244, 246, 248)
@@ -24,6 +37,8 @@ body
 		span
 			color naranja
 
+.container
+	max-width 90%
 
 /*	End of General Classes
 --------------------------------*/
@@ -94,15 +109,17 @@ body
 			.menu
 				font-size 0.9em
 				font-weight 500
+
 				ul
 					li
 						cursor pointer
 						margin-right 1em
 					.active
 						color naranja
-						
+
 			.main-menu-options
 				padding-right 0
+
 				ul
 					li
 						cursor pointer
@@ -124,7 +141,7 @@ body
 							text-align center
 							top -13px
 							width 17px
-							
+
 					.rotate-search
 						transform rotate(-85deg)
 
@@ -134,32 +151,44 @@ body
 		height 650px
 		display flex
 		position relative
-		
+
 		.home-bg
 			height 100%
 			position absolute
 			width 100%
+
 		#promos
 			align-items center
 			display flex
 			height 200px
-			
+			overflow-x auto
+
 			.promos-controls
-				span
+
+				.control
 					cursor pointer
 					display block
 					background white
 					height 17px
 					margin-bottom 0.8em
+					transition 0.4s all ease-in
 					width 10px
+
+					&:hover
+						background rgba(naranja, 1)
+						box-shadow -2px -2px 5px rgba(0, 0, 0, .4)
+
 				.promo-selected
 					background naranja
 					height 36px
+					box-shadow -2px -2px 5px rgba(0, 0, 0, .4)
+
 			.promo
 				height 100%
 				margin 0
 				padding-right 0
 				position relative
+
 				&-title
 					h1
 						color naranja
@@ -167,26 +196,31 @@ body
 						font-weight 900
 						margin 0 0 0.4em 0
 						text-transform uppercase
+
 				&-content
 					&-pack
 						p
 							font-size 1.2em
 							font-weight bold
+
 					&-description
 						p
 							color rgb(73, 86, 98)
 							font-size 1.1em
+
 				&-foot
 					align-items center
 					bottom 0
 					display flex
 					position absolute
+
 					&-price
 						margin-right 2em
 						p
 							font-weight 700
 							font-size 1.2em
 							margin 0
+
 					&-order
 						color naranja
 						p
@@ -195,14 +229,82 @@ body
 							span
 								position relative
 								top -3px
-								// 
+
+#new-arrivals-section
+	height 830px
+	position relative
+	overflow hidden
+
+	.container
+		// overflow-x auto
+
+		#new-arrivals
+			text-align center
+			position relative
+
+			&-title
+				// display none
+				h2
+					margin 2.5em 0 0.7em 0
+					span
+						//
+
+			&-description
+				margin-bottom 5em
+				// p
+
+			&-content
+				align-items center
+				display flex
+				overflow-y auto
+				padding 0.7em
+
+				.new-arrival
+					background white
+					height 365px
+					margin 0.5em
+					min-height 365px
+					min-width 270px
+					width 270px
+
+					&-img
+						padding-top 2em
+
+					&-name
+						// h4
+
+					&-price
+						// h4
+
+			&-paging
+				align-items center
+				display flex
+				height 200px
+
+				.paging-controls
+					align-items center
+					display flex
+					background white
+					height 60px
+					justify-content center
+
+					span
+						background naranja
+						border-radius 50%
+						cursor pointer
+						height 8px
+						margin 0 0.2em
+						width 8px
+
+#best-sales
+	// 
 
 
 
 
 
 
-// #new-arrivals
+
 
 
 
