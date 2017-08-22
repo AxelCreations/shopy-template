@@ -231,9 +231,9 @@ body
 								top -3px
 
 #new-arrivals-section
-	height 830px
+	height 650px
 	position relative
-	overflow hidden
+	// overflow hidden
 
 	.container
 		// overflow-x auto
@@ -245,12 +245,12 @@ body
 			&-title
 				// display none
 				h2
-					margin 2.5em 0 0.7em 0
+					margin 1.2em 0 0.7em 0
 					span
 						//
 
 			&-description
-				margin-bottom 5em
+				margin-bottom 2em
 				// p
 
 			&-content
@@ -262,30 +262,39 @@ body
 				.new-arrival
 					background white
 					height 365px
-					margin 0.5em
+					margin-left 1em
 					min-height 365px
 					min-width 270px
 					width 270px
+					
+					&:first-child
+						margin 0
 
 					&-img
 						padding-top 2em
+						margin-bottom 1.5em
 
 					&-name
-						// h4
+						h4
+							font-weight 700
+							margin 1em 0
 
 					&-price
-						// h4
+						h4
+							color naranja
+							font-weight 700
+							margin 1.5em 0
 
 			&-paging
 				align-items center
 				display flex
-				height 200px
+				height 100px
 
 				.paging-controls
 					align-items center
 					display flex
 					background white
-					height 60px
+					height 50px
 					justify-content center
 
 					span
@@ -297,9 +306,238 @@ body
 						width 8px
 
 #best-sales
-	// 
+	// height 650px
+	.container
+		padding-top 1.5em
+		background-clip content-box
 
+		#best-sales-offers
+			.best-sales-offer
+				background white
+				background-clip content-box
+				height 100px
+				margin-bottom 2em
 
+				&-discount
+					align-items center
+					display flex
+					height 100px
+					justify-content center
+					position relative
+
+					.sale-bg
+						background naranja
+						height 60px
+						right 40px
+						position absolute
+						transform rotate(45deg)
+						width 50px
+
+						&::after
+							content ''
+							background rgba(naranja, 0.5)
+							display block
+							height 52px
+							right 5px
+							position relative
+							top 4px
+							width 60px
+
+					.discount
+						text-align center
+
+						p
+							color white
+							font-size 0.8em
+							font-style italic
+							right 46px
+							margin 0
+							position absolute
+							top 25px
+
+							span
+								font-size 1.6em
+								font-style normal
+								font-weight 700
+								margin 0
+
+				&-content
+					padding-right 0
+
+					.offer-description
+						padding-right 0
+						h3
+							font-size 1.3em
+							font-weight 900
+							letter-spacing -1px
+							text-transform uppercase
+						p
+							font-size 0.9em
+							font-weight 600
+							letter-spacing -1px
+
+					.offer-price
+						height 100px
+						padding 0
+						h3
+							color naranja
+							font-size 2em
+							font-weight 800
+							margin 23% 0
+							span
+								cursor pointer
+								font-weight 900
+								font-size 0.8em
+
+				.adv-area-title
+					text-align center
+					p
+						font-size 1.1em
+						font-weight 700
+						margin 1.3em 0 0.5em 0
+						span
+							color naranja
+
+				.adv-area-size
+					color gray
+					letter-spacing 8px
+					text-align center
+
+		#best-sales-body
+			margin-top 2em
+			margin-bottom 2.5em
+	
+			.best-sales-title
+				margin 1em 0 1.5em 0
+
+			.best-sales-description
+				margin-bottom 3em
+				text-align center
+
+			.best-sales-content
+				display flex
+				height 195px
+				justify-content space-between
+				overflow-x auto
+
+				.best-sale
+					background white
+					background-clip content-box
+					height 160px
+					min-width 160px
+					min-width 370px
+					position relative
+					width 370px
+
+					&-img
+						position absolute
+						top 40px
+						left 25px
+
+					&-name
+						position absolute
+						right 45px
+						top 30px
+						h3
+							font-size 1.3em
+
+					&-votes
+						background-color white
+						background url('../imgs/icons/rate.png'), url('../imgs/icons/rate.png'), url('../imgs/icons/rate.png'), url('../imgs/icons/rate.png'), url('../imgs/icons/rate.png')
+						background-size content, content, content, content, content
+						background-size 14px 12px
+						border 1px dashed rgba(naranja, .5)
+						position absolute
+						height 14px
+						right 145px
+						top 95px
+						width 72px
+
+					&-price
+						color naranja
+						position absolute
+						right 45px
+						top 82px
+						h4
+							font-weight 700
+
+		#join-section
+			align-items center
+			background white
+			margin-bottom 3em
+			min-height 123px
+			padding 5% 0 4% 6%
+
+			div
+				margin-bottom 1em
+				padding 0
+
+				div
+					h5
+						color naranja
+						font-size 1.2em
+						font-weight 800
+						margin 0
+						text-transform uppercase
+						white-space nowrap
+
+					p
+						color rgb(52, 64, 75)
+						font-size 0.95em
+						font-style italic
+						font-weight 700
+						letter-spacing -1px
+						margin 0
+
+					.join-input
+						span
+							color naranja
+							font-size 1.5em
+							margin-right 0.5em
+							
+						input
+							border none
+							border-radius 5px
+							border-top 1px solid rgba(naranja, 0.3)
+							border-bottom 1px solid rgba(naranja, 0.3)
+							height 25px
+							margin 0
+							padding 0 0.5em
+							position relative
+							top -6px
+							transition 0.5s height ease
+							width 70%
+
+							&:focus
+								border-bottom 3px solid rgba(naranja, 0.5)
+								border-top 2px solid rgba(naranja, 0.3)
+								box-shadow 0 0 3px 2px rgba(naranja, .1)
+								height 35px
+								outline 3px rgba(orange, .4)
+
+							&::placeholder
+								color rgba(gray, .5)
+
+					.join-button
+						.join
+							background-color naranja
+							border-radius 0
+							color white
+							outline none
+							padding 1em 1.5em
+							position relative
+							top -14px
+
+#page-footer
+	height 250px
+	overflow hidden
+	.container
+		.row
+			.foot-logo
+			.foot-info
+			.foot-payment
+				// 
+					
 
 
 

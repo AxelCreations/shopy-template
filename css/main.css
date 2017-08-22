@@ -281,19 +281,18 @@ body h2 span {
   top: -3px;
 }
 #new-arrivals-section {
-  height: 830px;
+  height: 650px;
   position: relative;
-  overflow: hidden;
 }
 #new-arrivals-section .container #new-arrivals {
   text-align: center;
   position: relative;
 }
 #new-arrivals-section .container #new-arrivals-title h2 {
-  margin: 2.5em 0 0.7em 0;
+  margin: 1.2em 0 0.7em 0;
 }
 #new-arrivals-section .container #new-arrivals-description {
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 #new-arrivals-section .container #new-arrivals-content {
   -webkit-box-align: center;
@@ -314,13 +313,26 @@ body h2 span {
 #new-arrivals-section .container #new-arrivals-content .new-arrival {
   background: #fff;
   height: 365px;
-  margin: 0.5em;
+  margin-left: 1em;
   min-height: 365px;
   min-width: 270px;
   width: 270px;
 }
+#new-arrivals-section .container #new-arrivals-content .new-arrival:first-child {
+  margin: 0;
+}
 #new-arrivals-section .container #new-arrivals-content .new-arrival-img {
   padding-top: 2em;
+  margin-bottom: 1.5em;
+}
+#new-arrivals-section .container #new-arrivals-content .new-arrival-name h4 {
+  font-weight: 700;
+  margin: 1em 0;
+}
+#new-arrivals-section .container #new-arrivals-content .new-arrival-price h4 {
+  color: #ff5912;
+  font-weight: 700;
+  margin: 1.5em 0;
 }
 #new-arrivals-section .container #new-arrivals-paging {
   -webkit-box-align: center;
@@ -335,7 +347,7 @@ body h2 span {
   display: -ms-flexbox;
   display: box;
   display: flex;
-  height: 200px;
+  height: 100px;
 }
 #new-arrivals-section .container #new-arrivals-paging .paging-controls {
   -webkit-box-align: center;
@@ -351,7 +363,7 @@ body h2 span {
   display: box;
   display: flex;
   background: #fff;
-  height: 60px;
+  height: 50px;
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -o-box-pack: center;
@@ -366,6 +378,293 @@ body h2 span {
   height: 8px;
   margin: 0 0.2em;
   width: 8px;
+}
+#best-sales .container {
+  padding-top: 1.5em;
+  -webkit-background-clip: content;
+  -moz-background-clip: content;
+  background-clip: content-box;
+}
+#best-sales .container #best-sales-offers .best-sales-offer {
+  background: #fff;
+  -webkit-background-clip: content;
+  -moz-background-clip: content;
+  background-clip: content-box;
+  height: 100px;
+  margin-bottom: 2em;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-discount {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  height: 100px;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-discount .sale-bg {
+  background: #ff5912;
+  height: 60px;
+  right: 40px;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 50px;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-discount .sale-bg::after {
+  content: '';
+  background: rgba(255,89,18,0.5);
+  display: block;
+  height: 52px;
+  right: 5px;
+  position: relative;
+  top: 4px;
+  width: 60px;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-discount .discount {
+  text-align: center;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-discount .discount p {
+  color: #fff;
+  font-size: 0.8em;
+  font-style: italic;
+  right: 46px;
+  margin: 0;
+  position: absolute;
+  top: 25px;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-discount .discount p span {
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-content {
+  padding-right: 0;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-content .offer-description {
+  padding-right: 0;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-content .offer-description h3 {
+  font-size: 1.3em;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-content .offer-description p {
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-content .offer-price {
+  height: 100px;
+  padding: 0;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-content .offer-price h3 {
+  color: #ff5912;
+  font-size: 2em;
+  font-weight: 800;
+  margin: 23% 0;
+}
+#best-sales .container #best-sales-offers .best-sales-offer-content .offer-price h3 span {
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 0.8em;
+}
+#best-sales .container #best-sales-offers .best-sales-offer .adv-area-title {
+  text-align: center;
+}
+#best-sales .container #best-sales-offers .best-sales-offer .adv-area-title p {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 1.3em 0 0.5em 0;
+}
+#best-sales .container #best-sales-offers .best-sales-offer .adv-area-title p span {
+  color: #ff5912;
+}
+#best-sales .container #best-sales-offers .best-sales-offer .adv-area-size {
+  color: #808080;
+  letter-spacing: 8px;
+  text-align: center;
+}
+#best-sales .container #best-sales-body {
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+}
+#best-sales .container #best-sales-body .best-sales-title {
+  margin: 1em 0 1.5em 0;
+}
+#best-sales .container #best-sales-body .best-sales-description {
+  margin-bottom: 3em;
+  text-align: center;
+}
+#best-sales .container #best-sales-body .best-sales-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  height: 195px;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+#best-sales .container #best-sales-body .best-sales-content .best-sale {
+  background: #fff;
+  -webkit-background-clip: content;
+  -moz-background-clip: content;
+  background-clip: content-box;
+  height: 160px;
+  min-width: 160px;
+  min-width: 370px;
+  position: relative;
+  width: 370px;
+}
+#best-sales .container #best-sales-body .best-sales-content .best-sale-img {
+  position: absolute;
+  top: 40px;
+  left: 25px;
+}
+#best-sales .container #best-sales-body .best-sales-content .best-sale-name {
+  position: absolute;
+  right: 45px;
+  top: 30px;
+}
+#best-sales .container #best-sales-body .best-sales-content .best-sale-name h3 {
+  font-size: 1.3em;
+}
+#best-sales .container #best-sales-body .best-sales-content .best-sale-votes {
+  background-color: #fff;
+  background: url("../imgs/icons/rate.png"), url("../imgs/icons/rate.png"), url("../imgs/icons/rate.png"), url("../imgs/icons/rate.png"), url("../imgs/icons/rate.png");
+  -webkit-background-size: content, content, content, content, content;
+  -moz-background-size: content, content, content, content, content;
+  background-size: content, content, content, content, content;
+  -webkit-background-size: 14px 12px;
+  -moz-background-size: 14px 12px;
+  background-size: 14px 12px;
+  border: 1px dashed rgba(255,89,18,0.5);
+  position: absolute;
+  height: 14px;
+  right: 145px;
+  top: 95px;
+  width: 72px;
+}
+#best-sales .container #best-sales-body .best-sales-content .best-sale-price {
+  color: #ff5912;
+  position: absolute;
+  right: 45px;
+  top: 82px;
+}
+#best-sales .container #best-sales-body .best-sales-content .best-sale-price h4 {
+  font-weight: 700;
+}
+#best-sales .container #join-section {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 3em;
+  min-height: 123px;
+  padding: 5% 0 4% 6%;
+}
+#best-sales .container #join-section div {
+  margin-bottom: 1em;
+  padding: 0;
+}
+#best-sales .container #join-section div div h5 {
+  color: #ff5912;
+  font-size: 1.2em;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+#best-sales .container #join-section div div p {
+  color: #34404b;
+  font-size: 0.95em;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0;
+}
+#best-sales .container #join-section div div .join-input span {
+  color: #ff5912;
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+#best-sales .container #join-section div div .join-input input {
+  border: none;
+  border-radius: 5px;
+  border-top: 1px solid rgba(255,89,18,0.3);
+  border-bottom: 1px solid rgba(255,89,18,0.3);
+  height: 25px;
+  margin: 0;
+  padding: 0 0.5em;
+  position: relative;
+  top: -6px;
+  -webkit-transition: 0.5s height ease;
+  -moz-transition: 0.5s height ease;
+  -o-transition: 0.5s height ease;
+  -ms-transition: 0.5s height ease;
+  transition: 0.5s height ease;
+  width: 70%;
+}
+#best-sales .container #join-section div div .join-input input:focus {
+  border-bottom: 3px solid rgba(255,89,18,0.5);
+  border-top: 2px solid rgba(255,89,18,0.3);
+  -webkit-box-shadow: 0 0 3px 2px rgba(255,89,18,0.1);
+  box-shadow: 0 0 3px 2px rgba(255,89,18,0.1);
+  height: 35px;
+  outline: 3px rgba(255,165,0,0.4);
+}
+#best-sales .container #join-section div div .join-input input::-webkit-input-placeholder {
+  color: rgba(128,128,128,0.5);
+}
+#best-sales .container #join-section div div .join-input input::-moz-placeholder {
+  color: rgba(128,128,128,0.5);
+}
+#best-sales .container #join-section div div .join-input input:-ms-input-placeholder {
+  color: rgba(128,128,128,0.5);
+}
+#best-sales .container #join-section div div .join-input input::placeholder {
+  color: rgba(128,128,128,0.5);
+}
+#best-sales .container #join-section div div .join-button .join {
+  background-color: #ff5912;
+  border-radius: 0;
+  color: #fff;
+  outline: none;
+  padding: 1em 1.5em;
+  position: relative;
+  top: -14px;
+}
+#page-footer {
+  height: 250px;
+  overflow: hidden;
 }
 /*	End of Home Template Classes
 --------------------------------*/
