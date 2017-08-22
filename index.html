@@ -12,8 +12,8 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-            <!-- Principal, Main, Nav, Promo -->
-         <section id="main">
+            <!-- Header, Main Menu, Nav -->
+         <section id="header">
 
                 <!-- Navigation Section -->
              <div id="navigation">
@@ -41,19 +41,19 @@
                     <!-- Main Menu Section in Navigation -->
                  <div id="main-menu">
                     <div class="row">
-                        <div class="col-sm-2 main-menu-logo">
+                        <div class="col-md-2 main-menu-logo">
                             <img src="imgs/logo.png" height="39px" width="118px" alt="logo.png">
                         </div>
-                        <div class="col-sm-8 menu">
+                        <div class="col-md-8 menu">
                             <ul class="list-inline">
-                                <li class="active">Home</li>
-                                <li>Products</li>
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="products.html">Products</a></li>
                                 <li>Hot Deals</li>
                                 <li>About</li>
                                 <li>Contact</li>
                             </ul>
                         </div>
-                        <div class="col-sm-2 main-menu-options">
+                        <div class="col-md-2 main-menu-options">
                             <ul class="list-inline text-right">
                                 <li class="rotate-search icon-search"></li>
                                 <li>
@@ -70,46 +70,48 @@
              </div>
              </div>
 
-                <!-- Home Section in Page -->
-             <div id="home">
-                 <div class="home-bg" style="background-image: url(imgs/home-bg.jpg); background-size: cover;"></div>
-                 <div class="container">
-                 <div class="row">
-                        <!-- Promotions in Home -->
-                     <div class="col col-xs-12 col-sm-7 row" id="promos">
-                         <div class="col-xs-2 promos-controls">
-                            <span class="control"></span>
-                            <span class="control promo-selected"></span>
-                            <span class="control"></span>
-                         </div>
+            </div>
+        </section>
+            <!-- End Of Principal, Main. -->
 
-                         <div class="col-xs-10 promo">
-                             <div class="promo-title">
-                                 <h1>Full Winter Kit</h1>
+            <!-- Home Section in Page -->
+        <section id="home">
+             <div class="home-bg" style="background-image: url(imgs/home-bg.jpg); background-size: cover;"></div>
+             <div class="container">
+             <div class="row">
+                    <!-- Promotions in Home -->
+                 <div class="col col-xs-12 col-sm-7 row" id="promos">
+                     <div class="col-xs-2 promos-controls">
+                        <span class="control"></span>
+                        <span class="control promo-selected"></span>
+                        <span class="control"></span>
+                     </div>
+
+                     <div class="col-xs-10 promo">
+                         <div class="promo-title">
+                             <h1>Full Winter Kit</h1>
+                         </div>
+                         <div class="promo-content">
+                             <div class="promo-content-pack">
+                                 <p>Half Jacket + Skiny Trousers + Boot Leather</p>
                              </div>
-                             <div class="promo-content">
-                                 <div class="promo-content-pack">
-                                     <p>Half Jacket + Skiny Trousers + Boot Leather</p>
-                                 </div>
-                                 <div class="promo-content-description">
-                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                 </div>
+                             <div class="promo-content-description">
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                              </div>
-                             <div class="promo-foot">
-                                 <div class="promo-foot-price">
-                                     <p>Price: 120$</p>
-                                 </div>
-                                 <div class="promo-foot-order">
-                                     <p><span><img src="imgs/icons/cart.png" alt="tel" height="22px" width="24px"> </span>Order Now</p>
-                                 </div>
+                         </div>
+                         <div class="promo-foot">
+                             <div class="promo-foot-price">
+                                 <p>Price: 120$</p>
+                             </div>
+                             <div class="promo-foot-order">
+                                 <p><span><img src="imgs/icons/cart.png" alt="tel" height="22px" width="24px"> </span>Order Now</p>
                              </div>
                          </div>
                      </div>
                  </div>
-                </div>
-            </div>
+             </div>
         </section>
-            <!-- End Of Principal, Main. -->
+            <!-- End of Home Section -->
 
             <!-- New Arrivals Section -->
         <section id="new-arrivals-section">
@@ -258,7 +260,14 @@
                         </div>
                     </div>
                 </div>
-                <div id="join-section">
+            </div>
+        </section>
+            <!-- End Of Best Sales Section -->
+
+            <!-- Join Section -->
+        <section id="join-section">
+            <div class="container">
+                <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <div class="col-sm-5 col-md-4">
                             <h5>News Letter</h5>
@@ -283,7 +292,6 @@
                 </div>
             </div>
         </section>
-            <!-- End Of Best Sales Section -->
 
             <!-- Footer -->
         <footer id="page-footer">

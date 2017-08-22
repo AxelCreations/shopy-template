@@ -1,6 +1,3 @@
-/*
-	General Classes to the Complete Site.
-==============================================================*/
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -8,6 +5,12 @@
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
 }
 body {
   background-color: #f4f6f8;
@@ -24,20 +27,17 @@ body h2 span {
 .container {
   max-width: 90%;
 }
-/*	End of General Classes
---------------------------------*/
 /*
-	Home Template Classes 
+	All Site Styles to the Complete Site.
 ==============================================================*/
-#main {
-  height: 830px;
+#header {
   position: relative;
 }
-#main #navigation {
+#header #navigation {
   background: #fff;
   height: 180px;
 }
-#main #navigation #nav-info {
+#header #navigation #nav-info {
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
@@ -52,47 +52,47 @@ body h2 span {
   display: flex;
   height: 60px;
 }
-#main #navigation #nav-info ul {
+#header #navigation #nav-info ul {
   color: #34404b;
   width: 100%;
 }
-#main #navigation #nav-info ul li {
+#header #navigation #nav-info ul li {
   cursor: pointer;
   font-size: 0.8em;
   font-weight: bold;
 }
-#main #navigation #nav-info ul li .contact-icons {
+#header #navigation #nav-info ul li .contact-icons {
   bottom: -4px;
   color: #ff5912;
   font-size: 1.3em;
   position: relative;
 }
-#main #navigation #nav-info ul li img {
+#header #navigation #nav-info ul li img {
   position: relative;
   top: -1px;
 }
-#main #navigation #nav-info ul .social-icons {
+#header #navigation #nav-info ul .social-icons {
   bottom: -3px;
   font-size: 1.2em;
   position: relative;
 }
-#main #navigation #nav-info ul .social-icons span {
+#header #navigation #nav-info ul .social-icons span {
   margin: 0 0.2em;
   position: relative;
 }
-#main #navigation #nav-info ul .social-icons span:hover::before {
+#header #navigation #nav-info ul .social-icons span:hover::before {
   color: rgba(255,89,18,0.9);
   font-size: 1.3em;
   position: relative;
 }
-#main #navigation #nav-info ul .social-icons span::before {
+#header #navigation #nav-info ul .social-icons span::before {
   -webkit-transition: all ease 0.4s;
   -moz-transition: all ease 0.4s;
   -o-transition: all ease 0.4s;
   -ms-transition: all ease 0.4s;
   transition: all ease 0.4s;
 }
-#main #navigation #main-menu {
+#header #navigation #main-menu {
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
@@ -107,28 +107,28 @@ body h2 span {
   display: flex;
   height: 120px;
 }
-#main #navigation #main-menu .row {
+#header #navigation #main-menu .row {
   width: 100%;
 }
-#main #navigation #main-menu .main-menu-logo {
+#header #navigation #main-menu .main-menu-logo {
   position: relative;
   top: -8px;
 }
-#main #navigation #main-menu .menu {
+#header #navigation #main-menu .menu {
   font-size: 0.9em;
   font-weight: 500;
 }
-#main #navigation #main-menu .menu ul li {
+#header #navigation #main-menu .menu ul li {
   cursor: pointer;
   margin-right: 1em;
 }
-#main #navigation #main-menu .menu ul .active {
+#header #navigation #main-menu .menu ul .active {
   color: #ff5912;
 }
-#main #navigation #main-menu .main-menu-options {
+#header #navigation #main-menu .main-menu-options {
   padding-right: 0;
 }
-#main #navigation #main-menu .main-menu-options ul li {
+#header #navigation #main-menu .main-menu-options ul li {
   cursor: pointer;
   font-size: 1.3em;
   margin-left: 0.7em;
@@ -139,7 +139,7 @@ body h2 span {
   -ms-transition: all ease 0.6s;
   transition: all ease 0.6s;
 }
-#main #navigation #main-menu .main-menu-options ul li .cart {
+#header #navigation #main-menu .main-menu-options ul li .cart {
   background: #34404b;
   -webkit-background-clip: boerder-box;
   -moz-background-clip: boerder-box;
@@ -155,14 +155,145 @@ body h2 span {
   top: -13px;
   width: 17px;
 }
-#main #navigation #main-menu .main-menu-options ul .rotate-search {
+#header #navigation #main-menu .main-menu-options ul .rotate-search {
   -webkit-transform: rotate(-85deg);
   -moz-transform: rotate(-85deg);
   -o-transform: rotate(-85deg);
   -ms-transform: rotate(-85deg);
   transform: rotate(-85deg);
 }
-#main #home {
+#join-section .container .row {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 5em;
+  min-height: 123px;
+  padding: 7% 0 0 6%;
+}
+#join-section .container .row div {
+  margin-bottom: 1em;
+  padding: 0;
+}
+#join-section .container .row div div h5 {
+  color: #ff5912;
+  font-size: 1.2em;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+#join-section .container .row div div p {
+  color: #34404b;
+  font-size: 0.95em;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0;
+}
+#join-section .container .row div div .join-input span {
+  color: #ff5912;
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+#join-section .container .row div div .join-input input {
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  margin: 0;
+  padding: 0 0.5em;
+  position: relative;
+  top: -6px;
+  -webkit-transition: 0.5s height ease;
+  -moz-transition: 0.5s height ease;
+  -o-transition: 0.5s height ease;
+  -ms-transition: 0.5s height ease;
+  transition: 0.5s height ease;
+  width: 70%;
+}
+#join-section .container .row div div .join-input input:focus {
+  border-bottom: 3px solid rgba(255,89,18,0.5);
+  border-top: 2px solid rgba(255,89,18,0.3);
+  -webkit-box-shadow: 0 0 3px 2px rgba(255,89,18,0.1);
+  box-shadow: 0 0 3px 2px rgba(255,89,18,0.1);
+  height: 35px;
+  outline: 3px rgba(255,165,0,0.4);
+}
+#join-section .container .row div div .join-input input::-webkit-input-placeholder {
+  color: rgba(128,128,128,0.5);
+}
+#join-section .container .row div div .join-input input::-moz-placeholder {
+  color: rgba(128,128,128,0.5);
+}
+#join-section .container .row div div .join-input input:-ms-input-placeholder {
+  color: rgba(128,128,128,0.5);
+}
+#join-section .container .row div div .join-input input::placeholder {
+  color: rgba(128,128,128,0.5);
+}
+#join-section .container .row div div .join-button .join {
+  background-color: #ff5912;
+  border-radius: 0;
+  color: #fff;
+  outline: none;
+  padding: 1em 1.5em;
+  position: relative;
+  top: -14px;
+}
+#page-footer {
+  background: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  padding: 8% 0;
+  min-height: 250px;
+  overflow: hidden;
+}
+#page-footer .container .row .foot-logo .logo-section {
+  margin: 1em 0;
+}
+#page-footer .container .row .foot-logo .copyrights {
+  margin: 0.5em 0;
+}
+#page-footer .container .row .foot-logo .copyrights p {
+  font-weight: 700;
+}
+#page-footer .container .row .foot-info {
+  padding-right: 0;
+}
+#page-footer .container .row .foot-info div ul {
+  font-weight: 700;
+  margin: 1em 0;
+  padding-left: 20px;
+}
+#page-footer .container .row .foot-info div ul li {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+#page-footer .container .row .foot-info .actived {
+  color: #ff5912;
+}
+#page-footer .container .row .foot-payment .title {
+  margin: 2em 0 1em 0;
+}
+#page-footer .container .row .foot-payment .title h4 {
+  color: #ff5912;
+  font-size: 1em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+/*	End of All Site Styles
+--------------------------------*/
+/*
+	Home Template Classes 
+==============================================================*/
+#home {
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
@@ -179,12 +310,12 @@ body h2 span {
   display: flex;
   position: relative;
 }
-#main #home .home-bg {
+#home .home-bg {
   height: 100%;
   position: absolute;
   width: 100%;
 }
-#main #home #promos {
+#home #promos {
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
@@ -200,7 +331,7 @@ body h2 span {
   height: 200px;
   overflow-x: auto;
 }
-#main #home #promos .promos-controls .control {
+#home #promos .promos-controls .control {
   cursor: pointer;
   display: block;
   background: #fff;
@@ -213,39 +344,39 @@ body h2 span {
   transition: 0.4s all ease-in;
   width: 10px;
 }
-#main #home #promos .promos-controls .control:hover {
+#home #promos .promos-controls .control:hover {
   background: #ff5912;
   -webkit-box-shadow: -2px -2px 5px rgba(0,0,0,0.4);
   box-shadow: -2px -2px 5px rgba(0,0,0,0.4);
 }
-#main #home #promos .promos-controls .promo-selected {
+#home #promos .promos-controls .promo-selected {
   background: #ff5912;
   height: 36px;
   -webkit-box-shadow: -2px -2px 5px rgba(0,0,0,0.4);
   box-shadow: -2px -2px 5px rgba(0,0,0,0.4);
 }
-#main #home #promos .promo {
+#home #promos .promo {
   height: 100%;
   margin: 0;
   padding-right: 0;
   position: relative;
 }
-#main #home #promos .promo-title h1 {
+#home #promos .promo-title h1 {
   color: #ff5912;
   font-size: 3em;
   font-weight: 900;
   margin: 0 0 0.4em 0;
   text-transform: uppercase;
 }
-#main #home #promos .promo-content-pack p {
+#home #promos .promo-content-pack p {
   font-size: 1.2em;
   font-weight: bold;
 }
-#main #home #promos .promo-content-description p {
+#home #promos .promo-content-description p {
   color: #495662;
   font-size: 1.1em;
 }
-#main #home #promos .promo-foot {
+#home #promos .promo-foot {
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
@@ -261,22 +392,22 @@ body h2 span {
   display: flex;
   position: absolute;
 }
-#main #home #promos .promo-foot-price {
+#home #promos .promo-foot-price {
   margin-right: 2em;
 }
-#main #home #promos .promo-foot-price p {
+#home #promos .promo-foot-price p {
   font-weight: 700;
   font-size: 1.2em;
   margin: 0;
 }
-#main #home #promos .promo-foot-order {
+#home #promos .promo-foot-order {
   color: #ff5912;
 }
-#main #home #promos .promo-foot-order p {
+#home #promos .promo-foot-order p {
   font-size: 1.2em;
   margin: 0;
 }
-#main #home #promos .promo-foot-order p span {
+#home #promos .promo-foot-order p span {
   position: relative;
   top: -3px;
 }
@@ -578,131 +709,10 @@ body h2 span {
 #best-sales .container #best-sales-body .best-sales-content .best-sale-price h4 {
   font-weight: 700;
 }
-#best-sales .container #join-section {
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -o-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  background: #fff;
-  margin-bottom: 5em;
-  min-height: 123px;
-  padding: 5% 0 4% 6%;
-}
-#best-sales .container #join-section div {
-  margin-bottom: 1em;
-  padding: 0;
-}
-#best-sales .container #join-section div div h5 {
-  color: #ff5912;
-  font-size: 1.2em;
-  font-weight: 800;
-  margin: 0;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-#best-sales .container #join-section div div p {
-  color: #34404b;
-  font-size: 0.95em;
-  font-style: italic;
-  font-weight: 700;
-  letter-spacing: -1px;
-  margin: 0;
-}
-#best-sales .container #join-section div div .join-input span {
-  color: #ff5912;
-  font-size: 1.5em;
-  margin-right: 0.5em;
-}
-#best-sales .container #join-section div div .join-input input {
-  border: none;
-  border-radius: 5px;
-  height: 25px;
-  margin: 0;
-  padding: 0 0.5em;
-  position: relative;
-  top: -6px;
-  -webkit-transition: 0.5s height ease;
-  -moz-transition: 0.5s height ease;
-  -o-transition: 0.5s height ease;
-  -ms-transition: 0.5s height ease;
-  transition: 0.5s height ease;
-  width: 70%;
-}
-#best-sales .container #join-section div div .join-input input:focus {
-  border-bottom: 3px solid rgba(255,89,18,0.5);
-  border-top: 2px solid rgba(255,89,18,0.3);
-  -webkit-box-shadow: 0 0 3px 2px rgba(255,89,18,0.1);
-  box-shadow: 0 0 3px 2px rgba(255,89,18,0.1);
-  height: 35px;
-  outline: 3px rgba(255,165,0,0.4);
-}
-#best-sales .container #join-section div div .join-input input::-webkit-input-placeholder {
-  color: rgba(128,128,128,0.5);
-}
-#best-sales .container #join-section div div .join-input input::-moz-placeholder {
-  color: rgba(128,128,128,0.5);
-}
-#best-sales .container #join-section div div .join-input input:-ms-input-placeholder {
-  color: rgba(128,128,128,0.5);
-}
-#best-sales .container #join-section div div .join-input input::placeholder {
-  color: rgba(128,128,128,0.5);
-}
-#best-sales .container #join-section div div .join-button .join {
-  background-color: #ff5912;
-  border-radius: 0;
-  color: #fff;
-  outline: none;
-  padding: 1em 1.5em;
-  position: relative;
-  top: -14px;
-}
-#page-footer {
-  background: #fff;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  padding: 8% 0;
-  min-height: 250px;
-  overflow: hidden;
-}
-#page-footer .container .row .foot-logo .logo-section {
-  margin: 1em 0;
-}
-#page-footer .container .row .foot-logo .copyrights {
-  margin: 0.5em 0;
-}
-#page-footer .container .row .foot-logo .copyrights p {
-  font-weight: 700;
-}
-#page-footer .container .row .foot-info {
-  padding-right: 0;
-}
-#page-footer .container .row .foot-info div ul {
-  font-weight: 700;
-  margin: 1em 0;
-  padding-left: 20px;
-}
-#page-footer .container .row .foot-info div ul li {
-  font-size: 0.9em;
-  margin-bottom: 1em;
-}
-#page-footer .container .row .foot-info .actived {
-  color: #ff5912;
-}
-#page-footer .container .row .foot-payment .title {
-  margin: 2em 0 1em 0;
-}
-#page-footer .container .row .foot-payment .title h4 {
-  color: #ff5912;
-  font-size: 1em;
-  font-weight: 700;
-  white-space: nowrap;
-}
 /*	End of Home Template Classes
+--------------------------------*/
+/*
+	Products Template Classes 
+==============================================================*/
+/*	End of Products Template Classes
 --------------------------------*/

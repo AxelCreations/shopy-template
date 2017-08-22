@@ -16,13 +16,15 @@ arrival-color-4-green = "3dad3d"
 
 naranja = rgb(255, 89, 18)
 
-/*
-	General Classes to the Complete Site.
-==============================================================*/
-
+//Normalizing Classes____________________________________________
 ::selection
     background #b3d4fc
     text-shadow none
+
+a
+	color inherit
+	&:hover
+		color inherit
 
 body
 	background-color rgb(244, 246, 248)
@@ -39,17 +41,18 @@ body
 
 .container
 	max-width 90%
+	
 
-/*	End of General Classes
---------------------------------*/
+//End of normalizing Classes.____________________________________
 
 
 /*
-	Home Template Classes 
+	All Site Styles to the Complete Site.
 ==============================================================*/
 
-#main
-	height 830px
+
+#header
+	// height 830px
 	position relative
 	#navigation
 		background white
@@ -145,90 +148,211 @@ body
 					.rotate-search
 						transform rotate(-85deg)
 
-	#home
-		align-items center
-		color rgb(60, 71, 81)
-		height 650px
-		display flex
-		position relative
 
-		.home-bg
-			height 100%
-			position absolute
-			width 100%
-
-		#promos
+#join-section
+	.container
+		.row
 			align-items center
-			display flex
-			height 200px
-			overflow-x auto
+			background white
+			margin-bottom 5em
+			min-height 123px
+			padding 7% 0 0 6%
 
-			.promos-controls
+			div
+				margin-bottom 1em
+				padding 0
 
-				.control
-					cursor pointer
-					display block
-					background white
-					height 17px
-					margin-bottom 0.8em
-					transition 0.4s all ease-in
-					width 10px
+				div
+					h5
+						color naranja
+						font-size 1.2em
+						font-weight 800
+						margin 0
+						text-transform uppercase
+						white-space nowrap
 
-					&:hover
-						background rgba(naranja, 1)
-						box-shadow -2px -2px 5px rgba(0, 0, 0, .4)
+					p
+						color rgb(52, 64, 75)
+						font-size 0.95em
+						font-style italic
+						font-weight 700
+						letter-spacing -1px
+						margin 0
 
-				.promo-selected
-					background naranja
-					height 36px
+					.join-input
+						span
+							color naranja
+							font-size 1.5em
+							margin-right 0.5em
+
+						input
+							border none
+							border-radius 5px
+							height 25px
+							margin 0
+							padding 0 0.5em
+							position relative
+							top -6px
+							transition 0.5s height ease
+							width 70%
+
+							&:focus
+								border-bottom 3px solid rgba(naranja, 0.5)
+								border-top 2px solid rgba(naranja, 0.3)
+								box-shadow 0 0 3px 2px rgba(naranja, .1)
+								height 35px
+								outline 3px rgba(orange, .4)
+
+							&::placeholder
+								color rgba(gray, .5)
+
+					.join-button
+						.join
+							background-color naranja
+							border-radius 0
+							color white
+							outline none
+							padding 1em 1.5em
+							position relative
+							top -14px
+
+#page-footer
+	background white
+	display flex
+	padding 8% 0
+	min-height 250px
+	overflow hidden
+	.container
+		.row
+			.foot-logo
+				.logo-section
+					margin 1em 0
+				.copyrights
+					margin 0.5em 0
+					p
+						font-weight 700
+			.foot-info
+				padding-right 0
+				div
+					// padding-right 1em
+					ul
+						font-weight 700
+						margin 1em 0
+						padding-left 20px
+						li
+							font-size 0.9em
+							margin-bottom 1em
+				.actived
+					color naranja
+
+			.foot-payment
+				.title
+					margin 2em 0 1em 0
+					h4
+						color naranja
+						font-size 1em
+						font-weight 700
+						white-space nowrap
+
+
+
+/*	End of All Site Styles
+--------------------------------*/
+
+
+
+
+
+
+/*
+	Home Template Classes 
+==============================================================*/
+
+
+#home
+	align-items center
+	color rgb(60, 71, 81)
+	height 650px
+	display flex
+	position relative
+
+	.home-bg
+		height 100%
+		position absolute
+		width 100%
+
+	#promos
+		align-items center
+		display flex
+		height 200px
+		overflow-x auto
+
+		.promos-controls
+
+			.control
+				cursor pointer
+				display block
+				background white
+				height 17px
+				margin-bottom 0.8em
+				transition 0.4s all ease-in
+				width 10px
+
+				&:hover
+					background rgba(naranja, 1)
 					box-shadow -2px -2px 5px rgba(0, 0, 0, .4)
 
-			.promo
-				height 100%
-				margin 0
-				padding-right 0
-				position relative
+			.promo-selected
+				background naranja
+				height 36px
+				box-shadow -2px -2px 5px rgba(0, 0, 0, .4)
 
-				&-title
-					h1
-						color naranja
-						font-size 3em
-						font-weight 900
-						margin 0 0 0.4em 0
-						text-transform uppercase
+		.promo
+			height 100%
+			margin 0
+			padding-right 0
+			position relative
 
-				&-content
-					&-pack
-						p
-							font-size 1.2em
-							font-weight bold
+			&-title
+				h1
+					color naranja
+					font-size 3em
+					font-weight 900
+					margin 0 0 0.4em 0
+					text-transform uppercase
 
-					&-description
-						p
-							color rgb(73, 86, 98)
-							font-size 1.1em
+			&-content
+				&-pack
+					p
+						font-size 1.2em
+						font-weight bold
 
-				&-foot
-					align-items center
-					bottom 0
-					display flex
-					position absolute
+				&-description
+					p
+						color rgb(73, 86, 98)
+						font-size 1.1em
 
-					&-price
-						margin-right 2em
-						p
-							font-weight 700
-							font-size 1.2em
-							margin 0
+			&-foot
+				align-items center
+				bottom 0
+				display flex
+				position absolute
 
-					&-order
-						color naranja
-						p
-							font-size 1.2em
-							margin 0
-							span
-								position relative
-								top -3px
+				&-price
+					margin-right 2em
+					p
+						font-weight 700
+						font-size 1.2em
+						margin 0
+
+				&-order
+					color naranja
+					p
+						font-size 1.2em
+						margin 0
+						span
+							position relative
+							top -3px
 
 #new-arrivals-section
 	min-height 650px
@@ -458,127 +582,22 @@ body
 						top 82px
 						h4
 							font-weight 700
-
-		#join-section
-			align-items center
-			background white
-			margin-bottom 5em
-			min-height 123px
-			padding 5% 0 4% 6%
-
-			div
-				margin-bottom 1em
-				padding 0
-
-				div
-					h5
-						color naranja
-						font-size 1.2em
-						font-weight 800
-						margin 0
-						text-transform uppercase
-						white-space nowrap
-
-					p
-						color rgb(52, 64, 75)
-						font-size 0.95em
-						font-style italic
-						font-weight 700
-						letter-spacing -1px
-						margin 0
-
-					.join-input
-						span
-							color naranja
-							font-size 1.5em
-							margin-right 0.5em
-
-						input
-							border none
-							border-radius 5px
-							height 25px
-							margin 0
-							padding 0 0.5em
-							position relative
-							top -6px
-							transition 0.5s height ease
-							width 70%
-
-							&:focus
-								border-bottom 3px solid rgba(naranja, 0.5)
-								border-top 2px solid rgba(naranja, 0.3)
-								box-shadow 0 0 3px 2px rgba(naranja, .1)
-								height 35px
-								outline 3px rgba(orange, .4)
-
-							&::placeholder
-								color rgba(gray, .5)
-
-					.join-button
-						.join
-							background-color naranja
-							border-radius 0
-							color white
-							outline none
-							padding 1em 1.5em
-							position relative
-							top -14px
-
-#page-footer
-	background white
-	display flex
-	padding 8% 0
-	min-height 250px
-	overflow hidden
-	.container
-		.row
-			.foot-logo
-				.logo-section
-					margin 1em 0
-				.copyrights
-					margin 0.5em 0
-					p
-						font-weight 700
-			.foot-info
-				padding-right 0
-				div
-					// padding-right 1em
-					ul
-						font-weight 700
-						margin 1em 0
-						padding-left 20px
-						li
-							font-size 0.9em
-							margin-bottom 1em
-				.actived
-					color naranja
-
-			.foot-payment
-				.title
-					margin 2em 0 1em 0
-					h4
-						color naranja
-						font-size 1em
-						font-weight 700
-						white-space nowrap
-					
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 
 /*	End of Home Template Classes
 --------------------------------*/
 
 
+/*
+	Products Template Classes 
+==============================================================*/
 
 
+
+
+
+
+
+
+/*	End of Products Template Classes
+--------------------------------*/
