@@ -231,7 +231,7 @@ body
 								top -3px
 
 #new-arrivals-section
-	height 650px
+	min-height 650px
 	position relative
 	// overflow hidden
 
@@ -306,9 +306,9 @@ body
 						width 8px
 
 #best-sales
-	// height 650px
+	min-min-height 830px
 	.container
-		padding-top 1.5em
+		padding-top 2em
 		background-clip content-box
 
 		#best-sales-offers
@@ -316,7 +316,7 @@ body
 				background white
 				background-clip content-box
 				height 100px
-				margin-bottom 2em
+				margin-bottom 3em
 
 				&-discount
 					align-items center
@@ -404,14 +404,14 @@ body
 					text-align center
 
 		#best-sales-body
-			margin-top 2em
-			margin-bottom 2.5em
+			margin-top 3em
+			margin-bottom 4em
 	
 			.best-sales-title
-				margin 1em 0 1.5em 0
+				margin 1.5em 0 2em 0
 
 			.best-sales-description
-				margin-bottom 3em
+				margin-bottom 5.5em
 				text-align center
 
 			.best-sales-content
@@ -444,14 +444,12 @@ body
 					&-votes
 						background-color white
 						background url('../imgs/icons/rate.png'), url('../imgs/icons/rate.png'), url('../imgs/icons/rate.png'), url('../imgs/icons/rate.png'), url('../imgs/icons/rate.png')
-						background-size content, content, content, content, content
 						background-size 14px 12px
-						border 1px dashed rgba(naranja, .5)
 						position absolute
-						height 14px
+						height 13px
 						right 145px
 						top 95px
-						width 72px
+						width 71px
 
 					&-price
 						color naranja
@@ -464,7 +462,7 @@ body
 		#join-section
 			align-items center
 			background white
-			margin-bottom 3em
+			margin-bottom 5em
 			min-height 123px
 			padding 5% 0 4% 6%
 
@@ -494,12 +492,10 @@ body
 							color naranja
 							font-size 1.5em
 							margin-right 0.5em
-							
+
 						input
 							border none
 							border-radius 5px
-							border-top 1px solid rgba(naranja, 0.3)
-							border-bottom 1px solid rgba(naranja, 0.3)
 							height 25px
 							margin 0
 							padding 0 0.5em
@@ -529,14 +525,42 @@ body
 							top -14px
 
 #page-footer
-	height 250px
+	background white
+	display flex
+	padding 8% 0
+	min-height 250px
 	overflow hidden
 	.container
 		.row
 			.foot-logo
+				.logo-section
+					margin 1em 0
+				.copyrights
+					margin 0.5em 0
+					p
+						font-weight 700
 			.foot-info
+				padding-right 0
+				div
+					// padding-right 1em
+					ul
+						font-weight 700
+						margin 1em 0
+						padding-left 20px
+						li
+							font-size 0.9em
+							margin-bottom 1em
+				.actived
+					color naranja
+
 			.foot-payment
-				// 
+				.title
+					margin 2em 0 1em 0
+					h4
+						color naranja
+						font-size 1em
+						font-weight 700
+						white-space nowrap
 					
 
 

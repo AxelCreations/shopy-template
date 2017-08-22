@@ -281,7 +281,7 @@ body h2 span {
   top: -3px;
 }
 #new-arrivals-section {
-  height: 650px;
+  min-height: 650px;
   position: relative;
 }
 #new-arrivals-section .container #new-arrivals {
@@ -379,8 +379,11 @@ body h2 span {
   margin: 0 0.2em;
   width: 8px;
 }
+#best-sales {
+  min-min-height: 830px;
+}
 #best-sales .container {
-  padding-top: 1.5em;
+  padding-top: 2em;
   -webkit-background-clip: content;
   -moz-background-clip: content;
   background-clip: content-box;
@@ -391,7 +394,7 @@ body h2 span {
   -moz-background-clip: content;
   background-clip: content-box;
   height: 100px;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 #best-sales .container #best-sales-offers .best-sales-offer-discount {
   -webkit-box-align: center;
@@ -504,14 +507,14 @@ body h2 span {
   text-align: center;
 }
 #best-sales .container #best-sales-body {
-  margin-top: 2em;
-  margin-bottom: 2.5em;
+  margin-top: 3em;
+  margin-bottom: 4em;
 }
 #best-sales .container #best-sales-body .best-sales-title {
-  margin: 1em 0 1.5em 0;
+  margin: 1.5em 0 2em 0;
 }
 #best-sales .container #best-sales-body .best-sales-description {
-  margin-bottom: 3em;
+  margin-bottom: 5.5em;
   text-align: center;
 }
 #best-sales .container #best-sales-body .best-sales-content {
@@ -557,18 +560,14 @@ body h2 span {
 #best-sales .container #best-sales-body .best-sales-content .best-sale-votes {
   background-color: #fff;
   background: url("../imgs/icons/rate.png"), url("../imgs/icons/rate.png"), url("../imgs/icons/rate.png"), url("../imgs/icons/rate.png"), url("../imgs/icons/rate.png");
-  -webkit-background-size: content, content, content, content, content;
-  -moz-background-size: content, content, content, content, content;
-  background-size: content, content, content, content, content;
   -webkit-background-size: 14px 12px;
   -moz-background-size: 14px 12px;
   background-size: 14px 12px;
-  border: 1px dashed rgba(255,89,18,0.5);
   position: absolute;
-  height: 14px;
+  height: 13px;
   right: 145px;
   top: 95px;
-  width: 72px;
+  width: 71px;
 }
 #best-sales .container #best-sales-body .best-sales-content .best-sale-price {
   color: #ff5912;
@@ -587,7 +586,7 @@ body h2 span {
   -webkit-align-items: center;
   align-items: center;
   background: #fff;
-  margin-bottom: 3em;
+  margin-bottom: 5em;
   min-height: 123px;
   padding: 5% 0 4% 6%;
 }
@@ -619,8 +618,6 @@ body h2 span {
 #best-sales .container #join-section div div .join-input input {
   border: none;
   border-radius: 5px;
-  border-top: 1px solid rgba(255,89,18,0.3);
-  border-bottom: 1px solid rgba(255,89,18,0.3);
   height: 25px;
   margin: 0;
   padding: 0 0.5em;
@@ -663,8 +660,49 @@ body h2 span {
   top: -14px;
 }
 #page-footer {
-  height: 250px;
+  background: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  padding: 8% 0;
+  min-height: 250px;
   overflow: hidden;
+}
+#page-footer .container .row .foot-logo .logo-section {
+  margin: 1em 0;
+}
+#page-footer .container .row .foot-logo .copyrights {
+  margin: 0.5em 0;
+}
+#page-footer .container .row .foot-logo .copyrights p {
+  font-weight: 700;
+}
+#page-footer .container .row .foot-info {
+  padding-right: 0;
+}
+#page-footer .container .row .foot-info div ul {
+  font-weight: 700;
+  margin: 1em 0;
+  padding-left: 20px;
+}
+#page-footer .container .row .foot-info div ul li {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+#page-footer .container .row .foot-info .actived {
+  color: #ff5912;
+}
+#page-footer .container .row .foot-payment .title {
+  margin: 2em 0 1em 0;
+}
+#page-footer .container .row .foot-payment .title h4 {
+  color: #ff5912;
+  font-size: 1em;
+  font-weight: 700;
+  white-space: nowrap;
 }
 /*	End of Home Template Classes
 --------------------------------*/
