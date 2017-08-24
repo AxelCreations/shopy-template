@@ -153,6 +153,7 @@ body
 		.row
 			align-items center
 			background white
+			margin-top 2em
 			margin-bottom 5em
 			min-height 123px
 			padding 7% 0 0 6%
@@ -700,6 +701,7 @@ body
 								background rgb(52, 64, 75)
 								background-clip content-box
 								border-radius 50%
+								cursor pointer
 								height 11px
 								bottom -7px
 								width 11px
@@ -732,7 +734,6 @@ body
 								top -5px
 								width 49px
 
-					
 			#results
 				padding 0
 				#products
@@ -774,6 +775,173 @@ body
 
 
 /*	End of Products Template Classes
+--------------------------------*/
+
+
+
+
+
+/*
+	Product Details || Product Show Template Classes 
+==============================================================*/
+
+#product-details-section
+	background white
+	min-height 650px
+	.container
+		padding-top 5em
+		padding-bottom 3em
+		.row
+			#product-details
+				display block
+				position relative
+				top -50%
+				.product-view
+					align-items center
+					display flex
+					flex-direction column
+					margin-bottom 2em
+					&-large
+						min-height 350px
+						img
+							// 
+					&-mini
+						// align-items center
+						border 3px solid white
+						display flex
+						justify-content left
+						max-width 330px
+						margin-left 5%
+						overflow-y auto
+						.mini-image
+							align-items center
+							display flex
+							height 69px
+							justify-content center
+							margin-right 1em
+							min-width 95px
+							position relative
+							width 95px
+							
+							&-bg
+								background rgba(gray, 0.3)
+								cursor pointer
+								height 100%
+								position absolute
+								width 100%
+							
+								&:hover
+									background rgba(naranja, 0.3)
+									
+				
+							.active
+								background rgba(naranja, 0.5)
+
+				.product-detail
+					padding-right 0
+					&-title
+						h1
+							color naranja
+							font-size 2.9em
+							font-weight 900
+							text-transform uppercase
+
+					&-content
+						&-pack
+							p
+								font-size 1.17em
+								font-weight 700
+
+						&-description
+							margin-bottom 5em
+							p
+								font-size 1.1em
+
+					.choose
+						&-size
+							ul
+								label
+									font-size 1.3em
+									letter-spacing -1px
+									margin-right 0.5em
+								li
+									cursor pointer
+									font-weight bold
+									
+									&::after
+										content '-'
+										position relative
+										right -8px
+										
+									&:last-child
+										&::after
+											content ''
+
+								.active
+									font-size 1.25em
+									color naranja
+
+						&-quantity
+							padding-left 1.5em
+							padding-right 0
+							label
+								font-size 1.3em
+								letter-spacing -1px
+								margin-right 1em
+							span
+								font-size 1.2em
+								font-weight bold
+								margin-right 0.8em
+							.active
+								color naranja
+								font-weight 800
+
+					.product-foot
+						margin-top 4.6em
+						&-price
+							label
+								font-size 1.4em
+								font-weight 700
+
+						&-order
+							padding-left 1.7em
+							padding-right 0
+							span
+								margin-right 1.7em
+								img
+									cursor pointer
+								button
+									background naranja
+									color white
+									border-radius 50px
+									padding 0.85em 2em
+
+
+#related-products-section
+	.container
+		padding 5em 0 2em 0
+		
+		#related-products
+			#product-title
+				margin-bottom 1.5em
+				
+				h2
+					font-size 1.7em
+					
+			#product-description
+				margin-bottom 4em
+				text-align center
+			
+			#product-content
+				margin-bottom 6em
+
+			
+
+
+
+
+
+/*	End of Product Details || Product Show Template Classes
 --------------------------------*/
 
 

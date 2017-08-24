@@ -13,7 +13,7 @@
     </head>
     <body>
             <!-- Header, Main Menu, Nav -->
-         <section id="header">
+        <section id="header">
 
                 <!-- Navigation Section -->
              <div id="navigation">
@@ -46,8 +46,8 @@
                         </div>
                         <div class="col-md-8 menu">
                             <ul class="list-inline">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="product-detail.html">Products</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li class="active"><a href="product-detail.html">Products</a></li>
                                 <li>Hot Deals</li>
                                 <li>About</li>
                                 <li>Contact</li>
@@ -69,62 +69,104 @@
                  </div>
              </div>
              </div>
-
-            </div>
         </section>
             <!-- End Of Principal, Main. -->
 
-            <!-- Home Section in Page -->
-        <section id="home">
-             <div class="home-bg" style="background-image: url(imgs/home-bg.jpg); background-size: cover;"></div>
+
+            <!-- Product Detail Section in Page -->
+        <section id="product-details-section">
              <div class="container">
              <div class="row">
-                    <!-- Promotions in Home -->
-                 <div class="col col-xs-12 col-sm-7 row" id="promos">
-                     <div class="col-xs-2 promos-controls">
-                        <span class="control"></span>
-                        <span class="control promo-selected"></span>
-                        <span class="control"></span>
-                     </div>
-
-                     <div class="col-xs-10 promo">
-                         <div class="promo-title">
+                    <!-- Product Show -->
+                 <div class="row justify-content-between" id="product-details">
+                    <div class="col-xs-12 col-md-5 product-view">
+                        <div class="product-view-large">
+                            <img src="imgs/product-show/winter-kit-1.png" alt="img-large.png" height="275px" width="145px">
+                        </div>
+                        <div class="row product-view-mini">
+                            <div class="col-xs-7 mini-image">
+                                <img src="imgs/product-show/winter-kit-2.png" alt="img-mini1.png" height="48px" width="42px">
+                                <div class="mini-image-bg"></div>
+                            </div>
+                            <div class="col-xs-7 mini-image">
+                                <img src="imgs/product-show/winter-kit-3.png" alt="img-mini2.png" height="48px" width="42px">
+                                <div class="mini-image-bg"></div>
+                            </div>
+                            <div class="col-xs-7 mini-image">
+                                <img src="imgs/product-show/winter-kit-4.png" alt="img-mini3.png" height="48px" width="42px">
+                                <div class="mini-image-bg active"></div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-xs-11 col-md-6 pull-right product-detail">
+                         <div class="product-detail-title">
                              <h1>Full Winter Kit</h1>
                          </div>
-                         <div class="promo-content">
-                             <div class="promo-content-pack">
+                         <div class="product-detail-content">
+                             <div class="product-detail-content-pack">
                                  <p>Half Jacket + Skiny Trousers + Boot Leather</p>
                              </div>
-                             <div class="promo-content-description">
+                             <div class="product-detail-content-description">
                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                 <p>Lorem Ipsum is simply dummy text of the printing</p>
+                                 <p>and typesetting industry</p>
                              </div>
                          </div>
-                         <div class="promo-foot">
-                             <div class="promo-foot-price">
-                                 <p>Price: 120$</p>
+                         <div class="row choose">
+                             <div class="col-xs-12 col-md-6 choose-size">
+                                 <ul class="list-inline">
+                                    <label>Choos Size</label>
+                                     <li>S</li>
+                                     <li>M</li>
+                                     <li class="active">L</li>
+                                     <li>XL</li>
+                                 </ul>
                              </div>
-                             <div class="promo-foot-order">
-                                 <p><span><img src="imgs/icons/cart.png" alt="tel" height="22px" width="24px"> </span>Order Now</p>
+                             <div class="col-xs-12 col-md-6 choose-quantity">
+                                <label>Choos Quantity</label>
+                                <span>+</span>
+                                <span class="active">3</span>
+                                <span>-</span>
+                             </div>
+                         </div>
+                         <hr>
+                         <div class="row product-foot">
+                             <div class="col-xs-12 col-sm-5 product-foot-price">
+                                 <label>Price: 120$</label>
+                             </div>
+                             <div class="col-xs-12 col-sm-7 product-foot-order">
+                                <span>
+                                    <img src="imgs/icons/share.png" alt="tel" height="19px" width="19px">
+                                </span>
+                                <span>
+                                    <span><img src="imgs/icons/cart2.png" alt="tel" height="19px" width="19px">
+                                </span>
+                                <span>
+                                    <img src="imgs/icons/heart.png" alt="tel" height="19px" width="19px">
+                                </span>
+                                <span>
+                                    <button class="btn">Order Now</button>
+                                </span>
                              </div>
                          </div>
                      </div>
                  </div>
              </div>
         </section>
-            <!-- End of Home Section -->
+            <!-- End of Product Show Section -->
 
-            <!-- New Arrivals Section -->
-        <section id="new-arrivals-section">
+            <!-- Related Products Section -->
+        <section id="related-products-section">
             <div class="container">
-                <div id="new-arrivals">
-                    <div id="new-arrivals-title">
-                        <h2><span>New</span> Arrivals</h2>
+                <div id="related-products">
+                    <div id="product-title">
+                        <h2><span>Related</span> Products</h2>
                     </div>
-                    <div id="new-arrivals-description">
+                    <div id="product-description">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                     </div>
-                    <div id="new-arrivals-content">
-                        <div class="col-sm-6 col-md-3 new-arrival">
+                    <div id="product-content">
+                        <div class="col-sm-6 col-md-3 product">
                              <div class="new-arrival-img">
                                  <img src="imgs/new-arrivals/new-arrival-1.png" height="214px" width="159px" alt="clothes.jpg">
                              </div>
@@ -135,7 +177,7 @@
                                  <h4>100$</h4>
                              </div>
                         </div>
-                        <div class="col-sm-6 col-md-3 new-arrival">
+                        <div class="col-sm-6 col-md-3 product">
                              <div class="new-arrival-img">
                                  <img src="imgs/new-arrivals/new-arrival-2.png" height="214px" width="159px" alt="clothes.jpg">
                              </div>
@@ -146,7 +188,7 @@
                                  <h4>100$</h4>
                              </div>
                         </div>
-                        <div class="col-sm-6 col-md-3 new-arrival">
+                        <div class="col-sm-6 col-md-3 product">
                              <div class="new-arrival-img">
                                  <img src="imgs/new-arrivals/new-arrival-3.png" height="214px" width="159px" alt="clothes.jpg">
                              </div>
@@ -157,7 +199,7 @@
                                  <h4>100$</h4>
                              </div>
                         </div>
-                        <div class="col-sm-6 col-md-3 new-arrival">
+                        <div class="col-sm-6 col-md-3 product">
                              <div class="new-arrival-img">
                                  <img src="imgs/new-arrivals/new-arrival-4.png" height="214px" width="159px" alt="clothes.jpg">
                              </div>
@@ -169,100 +211,11 @@
                              </div>
                         </div>
                     </div>
-                    <div id="new-arrivals-paging">
-                        <div class="col-xs-12 paging-controls">
-                           <span></span>
-                           <span></span>
-                           <span></span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-            <!-- End of New Arrivals Section -->
+            <!-- End of Related products Section -->
 
-            <!-- Best Sales -->
-        <section id="best-sales">
-            <div class="container">
-                    <!-- Best Sales Offers Section -->
-                <div class="row" id="best-sales-offers">
-                    <div class="col col-xs-12 col-md-7 best-sales-offer">
-                        <div class="col-xs-3 best-sales-offer-discount">
-                            <div class="sale-bg"></div>
-                            <div class="discount">
-                                <p>Sale <br><span>50%</span></p>
-                            </div>
-                        </div>
-                        <div class="col-xs-9 best-sales-offer-content">
-                            <div class="col-xs-8 offer-description">
-                                <h3>Full Winter Kit</h3>
-                                <p>Half Jacket + Skiny Trousers + Boot Leather</p>
-                            </div>
-                            <div class="col-xs-4 offer-price">
-                                <h3>
-                                <span class="icon-caddie-shopping-streamline"></span> 120$
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-xs-12 col-md-5 best-sales-offer">
-                        <div class="adv-area-title">
-                            <p>adv <span>area</span></p>
-                        </div>
-                        <div class="adv-area-size">
-                            <p>470 x 100</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="best-sales-body">
-                    <div class="best-sales-title">
-                        <h2><span>Best</span> Sales</h2>
-                    </div>
-                    <div class="best-sales-description">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    </div>
-                    <div class="best-sales-content">
-                        <div class="col-xs-4 best-sale">
-                            <div class="best-sale-img">
-                                <img src="imgs/best-sales/best-sale.png" height="90px" width="80px" alt="clothes.jpg">
-                            </div>
-                            <div class="best-sale-name">
-                                <h3>Reebok Track Jacket</h3>
-                            </div>
-                            <div class="best-sale-votes"></div>
-                            <div class="best-sale-price">
-                                <h4>100$</h4>
-                            </div>
-                        </div>
-                        <div class="col-xs-4 best-sale">
-                            <div class="best-sale-img">
-                                <img src="imgs/best-sales/best-sale.png" height="90px" width="80px" alt="clothes.jpg">
-                            </div>
-                            <div class="best-sale-name">
-                                <h3>Reebok Track Jacket</h3>
-                            </div>
-                            <div class="best-sale-votes"></div>
-                            <div class="best-sale-price">
-                                <h4>100$</h4>
-                            </div>
-                        </div>
-                        <div class="col-xs-4 best-sale">
-                            <div class="best-sale-img">
-                                <img src="imgs/best-sales/best-sale.png" height="90px" width="80px" alt="clothes.jpg">
-                            </div>
-                            <div class="best-sale-name">
-                                <h3>Reebok Track Jacket</h3>
-                            </div>
-                            <div class="best-sale-votes"></div>
-                            <div class="best-sale-price">
-                                <h4>100$</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-            <!-- End Of Best Sales Section -->
 
             <!-- Join Section -->
         <section id="join-section">

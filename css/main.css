@@ -170,6 +170,7 @@ body h2 span {
   -webkit-align-items: center;
   align-items: center;
   background: #fff;
+  margin-top: 2em;
   margin-bottom: 5em;
   min-height: 123px;
   padding: 7% 0 0 6%;
@@ -818,6 +819,7 @@ body h2 span {
   -moz-background-clip: content;
   background-clip: content-box;
   border-radius: 50%;
+  cursor: pointer;
   height: 11px;
   bottom: -7px;
   width: 11px;
@@ -922,4 +924,199 @@ body h2 span {
   width: 8px;
 }
 /*	End of Products Template Classes
+--------------------------------*/
+/*
+	Product Details || Product Show Template Classes 
+==============================================================*/
+#product-details-section {
+  background: #fff;
+  min-height: 650px;
+}
+#product-details-section .container {
+  padding-top: 5em;
+  padding-bottom: 3em;
+}
+#product-details-section .container .row #product-details {
+  display: block;
+  position: relative;
+  top: -50%;
+}
+#product-details-section .container .row #product-details .product-view {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+#product-details-section .container .row #product-details .product-view-large {
+  min-height: 350px;
+}
+#product-details-section .container .row #product-details .product-view-mini {
+  border: 3px solid #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: left;
+  -moz-box-pack: left;
+  -o-box-pack: left;
+  -ms-flex-pack: left;
+  -webkit-justify-content: left;
+  justify-content: left;
+  max-width: 330px;
+  margin-left: 5%;
+  overflow-y: auto;
+}
+#product-details-section .container .row #product-details .product-view-mini .mini-image {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  height: 69px;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-right: 1em;
+  min-width: 95px;
+  position: relative;
+  width: 95px;
+}
+#product-details-section .container .row #product-details .product-view-mini .mini-image-bg {
+  background: rgba(128,128,128,0.3);
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+#product-details-section .container .row #product-details .product-view-mini .mini-image-bg:hover {
+  background: rgba(255,89,18,0.3);
+}
+#product-details-section .container .row #product-details .product-view-mini .mini-image .active {
+  background: rgba(255,89,18,0.5);
+}
+#product-details-section .container .row #product-details .product-detail {
+  padding-right: 0;
+}
+#product-details-section .container .row #product-details .product-detail-title h1 {
+  color: #ff5912;
+  font-size: 2.9em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#product-details-section .container .row #product-details .product-detail-content-pack p {
+  font-size: 1.17em;
+  font-weight: 700;
+}
+#product-details-section .container .row #product-details .product-detail-content-description {
+  margin-bottom: 5em;
+}
+#product-details-section .container .row #product-details .product-detail-content-description p {
+  font-size: 1.1em;
+}
+#product-details-section .container .row #product-details .product-detail .choose-size ul label {
+  font-size: 1.3em;
+  letter-spacing: -1px;
+  margin-right: 0.5em;
+}
+#product-details-section .container .row #product-details .product-detail .choose-size ul li {
+  cursor: pointer;
+  font-weight: bold;
+}
+#product-details-section .container .row #product-details .product-detail .choose-size ul li::after {
+  content: '-';
+  position: relative;
+  right: -8px;
+}
+#product-details-section .container .row #product-details .product-detail .choose-size ul li:last-child::after {
+  content: '';
+}
+#product-details-section .container .row #product-details .product-detail .choose-size ul .active {
+  font-size: 1.25em;
+  color: #ff5912;
+}
+#product-details-section .container .row #product-details .product-detail .choose-quantity {
+  padding-left: 1.5em;
+  padding-right: 0;
+}
+#product-details-section .container .row #product-details .product-detail .choose-quantity label {
+  font-size: 1.3em;
+  letter-spacing: -1px;
+  margin-right: 1em;
+}
+#product-details-section .container .row #product-details .product-detail .choose-quantity span {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 0.8em;
+}
+#product-details-section .container .row #product-details .product-detail .choose-quantity .active {
+  color: #ff5912;
+  font-weight: 800;
+}
+#product-details-section .container .row #product-details .product-detail .product-foot {
+  margin-top: 4.6em;
+}
+#product-details-section .container .row #product-details .product-detail .product-foot-price label {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+#product-details-section .container .row #product-details .product-detail .product-foot-order {
+  padding-left: 1.7em;
+  padding-right: 0;
+}
+#product-details-section .container .row #product-details .product-detail .product-foot-order span {
+  margin-right: 1.7em;
+}
+#product-details-section .container .row #product-details .product-detail .product-foot-order span img {
+  cursor: pointer;
+}
+#product-details-section .container .row #product-details .product-detail .product-foot-order span button {
+  background: #ff5912;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.85em 2em;
+}
+#related-products-section .container {
+  padding: 5em 0 2em 0;
+}
+#related-products-section .container #related-products #product-title {
+  margin-bottom: 1.5em;
+}
+#related-products-section .container #related-products #product-title h2 {
+  font-size: 1.7em;
+}
+#related-products-section .container #related-products #product-description {
+  margin-bottom: 4em;
+  text-align: center;
+}
+#related-products-section .container #related-products #product-content {
+  margin-bottom: 6em;
+}
+/*	End of Product Details || Product Show Template Classes
 --------------------------------*/
