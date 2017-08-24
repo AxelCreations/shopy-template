@@ -32,7 +32,6 @@ body
 
 	//Style to all Subtitle ind the Site.
 	h2
-		// color rgb(52, 64, 75)
 		font-weight 900
 		text-align center
 		text-transform uppercase
@@ -41,7 +40,7 @@ body
 
 .container
 	max-width 90%
-	
+
 
 //End of normalizing Classes.____________________________________
 
@@ -255,13 +254,36 @@ body
 						white-space nowrap
 
 
+//Style of Cards front side
+.new-arrival, .product
+	background white
+	height 365px
+	margin-left 1em
+	min-height 365px
+	min-width 270px
+	text-align center
+	width 270px
+
+	&-img
+		padding-top 2em
+		margin-bottom 1.5em
+
+	&-name
+		h4
+			font-weight 700
+			margin 1em 0
+
+	&-price
+		h4
+			color naranja
+			font-weight 700
+			margin 1.5em 0
+
+
+
 
 /*	End of All Site Styles
 --------------------------------*/
-
-
-
-
 
 
 /*
@@ -384,30 +406,8 @@ body
 				padding 0.7em
 
 				.new-arrival
-					background white
-					height 365px
-					margin-left 1em
-					min-height 365px
-					min-width 270px
-					width 270px
-					
 					&:first-child
 						margin 0
-
-					&-img
-						padding-top 2em
-						margin-bottom 1.5em
-
-					&-name
-						h4
-							font-weight 700
-							margin 1em 0
-
-					&-price
-						h4
-							color naranja
-							font-weight 700
-							margin 1.5em 0
 
 			&-paging
 				align-items center
@@ -567,7 +567,11 @@ body
 
 					&-votes
 						background-color white
-						background url('../imgs/icons/rate.png'), url('../imgs/icons/rate.png'), url('../imgs/icons/rate.png'), url('../imgs/icons/rate.png'), url('../imgs/icons/rate.png')
+						background url('../imgs/icons/rate.png'), 
+						url('../imgs/icons/rate.png'), 
+						url('../imgs/icons/rate.png'), 
+						url('../imgs/icons/rate.png'), 
+						url('../imgs/icons/rate.png')
 						background-size 14px 12px
 						position absolute
 						height 13px
@@ -594,6 +598,176 @@ body
 
 
 
+#products-section
+	margin-top 5em
+	margin-bottom 5em
+
+	.container
+		.row
+			#filters
+				z-index 999
+				.filter
+					background white
+					margin-bottom 2em
+					max-width 270px
+					min-width 220px
+					padding 2.5em 2.7em
+
+					h4
+						color naranja
+						font-size 1.2em
+						font-weight 800
+						letter-spacing -1px
+				
+					ul
+						margin 0
+						padding 0
+						font-size 1em
+
+						li
+							cursor pointer
+							font-weight 700
+							list-style none
+							margin 2em 0
+
+						.active
+							color naranja
+
+					.styled-ul
+						li
+							padding-left 1.8em
+							position relative
+	
+							&::before
+								content ''
+								background rgba(gray, .2)
+								height 13px
+								left 0
+								position absolute
+								top 4px
+								width 13px
+						 
+						.active
+							&::before
+								content ''
+								background white
+								border 4px solid naranja
+
+					&-price-content
+						font-size 1em
+						font-weight 700
+						letter-spacing -1px
+						margin-top 2.5em
+
+						.line-filter
+							border-bottom 2px solid rgba(gray, .4)
+							height 30px
+							margin-bottom 2em
+							margin-top 2em
+							position relative
+
+
+							.price-from
+								left 7%
+								position absolute
+								text-align left
+								top -5px
+
+							.price-to
+								position absolute
+								right 3%
+								top -5px
+
+							.dot-from
+								left 10%
+								position absolute
+
+							.from-to
+								border-bottom 3px solid rgb(52, 64, 75)
+								bottom -3px
+								left 10%
+								min-width 5px
+								padding 0 0.2em
+								position absolute
+								right 10%
+
+							.dot-to
+								position absolute
+								right 10%
+
+
+							.dot
+								background rgb(52, 64, 75)
+								background-clip content-box
+								border-radius 50%
+								height 11px
+								bottom -7px
+								width 11px
+
+						.text-filter
+							display inline-block
+							position relative
+							margin-bottom 2em
+							width 100%
+							.from
+								display flex
+								position absolute
+								top 10px
+
+							.to
+								display flex
+								position absolute
+								right 0px
+								top 10px
+
+							label
+								margin 0 0.5em 0 0em
+							input
+								// font-weight normal
+								background rgba(gray, .1)
+								border none
+								outline none
+								height 29px
+								position relative
+								top -5px
+								width 49px
+
+					
+			#results
+				padding 0
+				#products
+					z-index 0
+					display block
+					.product
+						margin-bottom 2em
+
+				#product-paging
+					align-items center
+					display flex
+					height 50px
+
+					.paging-controls
+						align-items center
+						background white
+						background-clip content-box
+						display flex
+						height 50px
+						justify-content center
+						padding-left 0
+						padding-right 2.8em
+
+						span
+							background naranja
+							border-radius 50%
+							cursor pointer
+							height 8px
+							margin 0 0.2em
+							width 8px
+		
+
+
+
+
 
 
 
@@ -601,3 +775,18 @@ body
 
 /*	End of Products Template Classes
 --------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
