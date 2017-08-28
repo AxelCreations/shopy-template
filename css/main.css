@@ -123,6 +123,9 @@ body h2 span {
   cursor: pointer;
   margin-right: 1em;
 }
+#header #navigation #main-menu .menu ul li:hover {
+  color: #ff5912;
+}
 #header #navigation #main-menu .menu ul .active {
   color: #ff5912;
 }
