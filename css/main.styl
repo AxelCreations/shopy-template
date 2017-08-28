@@ -263,7 +263,9 @@ body
 	margin-left 1em
 	min-height 365px
 	min-width 270px
+	max-width 270px
 	text-align center
+	transition all 0.7s
 	width 270px
 
 	&-img
@@ -281,6 +283,9 @@ body
 			font-weight 700
 			margin 1.5em 0
 
+	&:hover
+		box-shadow 5px 5px 8px rgba(black, .2)
+			
 
 
 
@@ -548,12 +553,14 @@ body
 
 				.best-sale
 					background white
-					background-clip content-box
 					height 160px
-					min-width 160px
+					margin-right 1em
 					min-width 370px
 					position relative
 					width 370px
+					
+					&:hover
+						box-shadow 3px 3px 8px rgba(black, .2)
 
 					&-img
 						position absolute
@@ -934,7 +941,13 @@ body
 				text-align center
 			
 			#product-content
-				margin-bottom 6em
+				align-items center
+				display flex
+				overflow-y auto
+				padding 0.7em
+				
+				.product
+					margin-bottom 2em
 
 			
 

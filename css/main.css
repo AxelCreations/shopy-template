@@ -297,7 +297,13 @@ body h2 span {
   margin-left: 1em;
   min-height: 365px;
   min-width: 270px;
+  max-width: 270px;
   text-align: center;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  transition: all 0.7s;
   width: 270px;
 }
 .new-arrival-img,
@@ -315,6 +321,11 @@ body h2 span {
   color: #ff5912;
   font-weight: 700;
   margin: 1.5em 0;
+}
+.new-arrival:hover,
+.product:hover {
+  -webkit-box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
 }
 /*	End of All Site Styles
 --------------------------------*/
@@ -673,14 +684,15 @@ body h2 span {
 }
 #best-sales .container #best-sales-body .best-sales-content .best-sale {
   background: #fff;
-  -webkit-background-clip: content;
-  -moz-background-clip: content;
-  background-clip: content-box;
   height: 160px;
-  min-width: 160px;
+  margin-right: 1em;
   min-width: 370px;
   position: relative;
   width: 370px;
+}
+#best-sales .container #best-sales-body .best-sales-content .best-sale:hover {
+  -webkit-box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
 }
 #best-sales .container #best-sales-body .best-sales-content .best-sale-img {
   position: absolute;
@@ -1117,7 +1129,23 @@ body h2 span {
   text-align: center;
 }
 #related-products-section .container #related-products #product-content {
-  margin-bottom: 6em;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  overflow-y: auto;
+  padding: 0.7em;
+}
+#related-products-section .container #related-products #product-content .product {
+  margin-bottom: 2em;
 }
 /*	End of Product Details || Product Show Template Classes
 --------------------------------*/
