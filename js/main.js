@@ -48,6 +48,6 @@ function up_quant(){
 function down_quant(){
 	var $quant = document.getElementById("quant");
 	var quant = parseInt($quant.innerHTML) - 1;
-	$quant.innerHTML = quant;
+	$quant.innerHTML = (quant > 1) ? quant : 1;
 };
 
