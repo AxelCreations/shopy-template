@@ -422,9 +422,15 @@ body h2 span {
 }
 #home #promos .promo {
   height: 100%;
+  left: 0;
   margin: 0;
   padding-right: 0;
   position: relative;
+  -webkit-transition: 1s all ease-in;
+  -moz-transition: 1s all ease-in;
+  -o-transition: 1s all ease-in;
+  -ms-transition: 1s all ease-in;
+  transition: 1s all ease-in;
 }
 #home #promos .promo-title h1 {
   color: #ff5912;
@@ -1085,7 +1091,6 @@ body h2 span {
   margin-right: 0.5em;
 }
 #product-details-section .container .row #product-details .product-detail .choose-size ul li {
-  cursor: pointer;
   font-weight: bold;
 }
 #product-details-section .container .row #product-details .product-detail .choose-size ul li::after {
@@ -1096,7 +1101,7 @@ body h2 span {
 #product-details-section .container .row #product-details .product-detail .choose-size ul li:last-child::after {
   content: '';
 }
-#product-details-section .container .row #product-details .product-detail .choose-size ul .active {
+#product-details-section .container .row #product-details .product-detail .choose-size ul li .active {
   font-size: 1.25em;
   color: #ff5912;
 }

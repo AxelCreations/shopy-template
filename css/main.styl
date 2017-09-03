@@ -367,9 +367,11 @@ body
 
 		.promo
 			height 100%
+			left 0
 			margin 0
 			padding-right 0
 			position relative
+			transition 1s all ease-in
 
 			&-title
 				h1
@@ -843,7 +845,6 @@ body
 						img
 							// 
 					&-mini
-						// align-items center
 						border 3px solid white
 						display flex
 						justify-content left
@@ -901,22 +902,22 @@ body
 									font-size 1.3em
 									letter-spacing -1px
 									margin-right 0.5em
+
 								li
-									cursor pointer
 									font-weight bold
-									
+
 									&::after
 										content '-'
 										position relative
 										right -8px
-										
+
 									&:last-child
 										&::after
 											content ''
 
-								.active
-									font-size 1.25em
-									color naranja
+									.active
+										font-size 1.25em
+										color naranja
 
 						&-quantity
 							padding-left 1.5em

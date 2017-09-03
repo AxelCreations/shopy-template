@@ -6,10 +6,12 @@
         <meta name="description" content="The Best Shopy Template Ever">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1, minimum-scale=1">
         
-        <script src="jsd/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/fontactis-fonts1.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
             <!-- Header, Main Menu, Nav -->
@@ -74,7 +76,6 @@
         </section>
             <!-- End Of Principal, Main. -->
 
-
             <!-- Product Detail Section in Page -->
         <section id="product-details-section">
              <div class="container">
@@ -115,20 +116,20 @@
                              </div>
                          </div>
                          <div class="row choose">
-                             <div class="col-xs-12 col-md-6 choose-size">
+                             <div class="col-xs-12 col-md-6 choose-size" id="select-size">
                                  <ul class="list-inline">
                                     <label>Choos Size</label>
-                                     <li>S</li>
-                                     <li>M</li>
-                                     <li class="active">L</li>
-                                     <li>XL</li>
+                                    <li><a href="#">S</a></li>
+                                    <li><a href="#">M</a></li>
+                                    <li><a href="#" class="active">L</a></li>
+                                    <li><a href="#">XL</a></li>
                                  </ul>
                              </div>
                              <div class="col-xs-12 col-md-6 choose-quantity">
                                 <label>Choos Quantity</label>
-                                <span><a href="#" onclick="up_quant()">+</a></span>
+                                <span><a href="#Quant" onclick="up_quant()">+</a></span>
                                 <span id="quant" class="active">3</span>
-                                <span><a href="#" onclick="down_quant()">-</a></span>
+                                <span><a href="#Quant" onclick="down_quant()">-</a></span>
                              </div>
                          </div>
                          <hr>
@@ -295,7 +296,7 @@
                 </div>
             </div>
         </footer>
-		<script src="js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
 

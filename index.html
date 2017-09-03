@@ -6,14 +6,16 @@
         <meta name="description" content="The Best Shopy Template Ever">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1, minimum-scale=1">
         
-        <script src="jsd/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/fontactis-fonts1.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
-            <!-- Header, Main Menu, Nav --> 
-         <section id="header">
+            <!-- Header, Main Menu, Nav -->
+        <section id="header">
 
                 <!-- Navigation Section -->
              <div id="navigation">
@@ -84,12 +86,12 @@
                     <!-- Promotions in Home -->
                  <div class="col col-xs-12 col-sm-7 row" id="promos">
                      <div class="col-xs-2 promos-controls">
-                        <span class="control"></span>
-                        <span class="control promo-selected"></span>
-                        <span class="control"></span>
+                        <span class="control" onclick="promo2()" id="control2"></span>
+                        <span class="control promo-selected" onclick="promo1()" id="control1"></span>
+                        <span class="control" onclick="promo3()" id="control3"></span>
                      </div>
 
-                     <div class="col-xs-10 promo">
+                     <div class="col-xs-10 promo1 promo">
                          <div class="promo-title">
                              <h1><a href="product-detail.html">Full Winter Kit</a></h1>
                          </div>
@@ -110,6 +112,54 @@
                              </div>
                          </div>
                      </div>
+
+                     
+                     <div class="col-xs-10 promo2 promo" style="display: none; height: 0;">
+                         <div class="promo-title">
+                             <h1><a href="product-detail.html">Sexy Pool Kit</a></h1>
+                         </div>
+                         <div class="promo-content">
+                             <div class="promo-content-pack">
+                                 <p>Big Hat + Solar Blocker + Bikiny</p>
+                             </div>
+                             <div class="promo-content-description">
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply</p>
+                             </div>
+                         </div>
+                         <div class="promo-foot">
+                             <div class="promo-foot-price">
+                                 <p>Price: 320$</p>
+                             </div>
+                             <div class="promo-foot-order">
+                                 <a href="#"><span><img src="imgs/icons/cart-orange.png" alt="Cart" height="22px" width="24px"> </span>Order Now</a>
+                             </div>
+                         </div>
+                     </div>
+
+                     
+                     <div class="col-xs-10 promo3 promo" style="display: none; height: 0;">
+                         <div class="promo-title">
+                             <h1><a href="product-detail.html">Back To School</a></h1>
+                         </div>
+                         <div class="promo-content">
+                             <div class="promo-content-pack">
+                                 <p>BackPackt + Pencil Kit + Black Choes</p>
+                             </div>
+                             <div class="promo-content-description">
+                                 <p>Lorem Ipsum is simply dummy text of the printing</p>
+                             </div>
+                         </div>
+                         <div class="promo-foot">
+                             <div class="promo-foot-price">
+                                 <p>Price: 200$</p>
+                             </div>
+                             <div class="promo-foot-order">
+                                 <a href="#"><span><img src="imgs/icons/cart-orange.png" alt="Cart" height="22px" width="24px"> </span>Order Now</a>
+                             </div>
+                         </div>
+                     </div>
+
+
                  </div>
              </div>
         </section>
@@ -342,6 +392,7 @@
                 </div>
             </div>
         </footer>
+        <script src="js/main.js"></script>
     </body>
 </html>
 
