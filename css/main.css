@@ -253,9 +253,6 @@ body h2 span {
 #join-section .container .row div div .join-input input::-webkit-input-placeholder {
   color: rgba(128,128,128,0.5);
 }
-#join-section .container .row div div .join-input input::-moz-placeholder {
-  color: rgba(128,128,128,0.5);
-}
 #join-section .container .row div div .join-input input:-ms-input-placeholder {
   color: rgba(128,128,128,0.5);
 }
@@ -496,7 +493,9 @@ body h2 span {
 #new-arrivals-section .container #new-arrivals-description {
   margin-bottom: 2em;
 }
-#new-arrivals-section .container #new-arrivals-content {
+#new-arrivals-section .container #new-arrivals-content-1,
+#new-arrivals-section .container #new-arrivals-content-2,
+#new-arrivals-section .container #new-arrivals-content-3 {
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
@@ -512,7 +511,9 @@ body h2 span {
   overflow-y: auto;
   padding: 0.7em;
 }
-#new-arrivals-section .container #new-arrivals-content .new-arrival:first-child {
+#new-arrivals-section .container #new-arrivals-content-1 .new-arrival:first-child,
+#new-arrivals-section .container #new-arrivals-content-2 .new-arrival:first-child,
+#new-arrivals-section .container #new-arrivals-content-3 .new-arrival:first-child {
   margin: 0;
 }
 #new-arrivals-section .container #new-arrivals-paging {
@@ -554,11 +555,24 @@ body h2 span {
 }
 #new-arrivals-section .container #new-arrivals-paging .paging-controls span {
   background: #ff5912;
+  -webkit-background-clip: border;
+  -moz-background-clip: border;
+  background-clip: border-box;
   border-radius: 50%;
   cursor: pointer;
   height: 8px;
   margin: 0 0.2em;
   width: 8px;
+}
+#new-arrivals-section .container #new-arrivals-paging .paging-controls span:hover {
+  border: 6px solid #ff5912;
+  -webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+}
+#new-arrivals-section .container #new-arrivals-paging .paging-controls .active {
+  border: 6px solid #ff5912;
+  -webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
 }
 #best-sales {
   min-min-height: 830px;
@@ -967,6 +981,16 @@ body h2 span {
   height: 8px;
   margin: 0 0.2em;
   width: 8px;
+}
+#products-section .container .row #results #product-paging .paging-controls span:hover {
+  border: 6px solid #ff5912;
+  -webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+}
+#products-section .container .row #results #product-paging .paging-controls .active {
+  border: 6px solid #ff5912;
+  -webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
 }
 /*	End of Products Template Classes
 --------------------------------*/

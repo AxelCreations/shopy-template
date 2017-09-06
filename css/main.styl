@@ -437,7 +437,7 @@ body
 				margin-bottom 2em
 				// p
 
-			&-content
+			&-content-1, &-content-2, &-content-3
 				align-items center
 				display flex
 				overflow-y auto
@@ -461,11 +461,20 @@ body
 
 					span
 						background naranja
+						background-clip border-box
 						border-radius 50%
 						cursor pointer
 						height 8px
 						margin 0 0.2em
 						width 8px
+						
+						&:hover
+							border 6px solid naranja
+							box-shadow 1px 2px 2px rgba(0,0,0, 0.5)						
+
+					.active
+						border 6px solid naranja
+						box-shadow 1px 2px 2px rgba(0,0,0, 0.5)
 
 #best-sales
 	min-min-height 830px
@@ -803,7 +812,14 @@ body
 							height 8px
 							margin 0 0.2em
 							width 8px
-		
+
+							&:hover
+								border 6px solid naranja
+								box-shadow 1px 2px 2px rgba(0,0,0, 0.5)						
+
+						.active
+							border 6px solid naranja
+							box-shadow 1px 2px 2px rgba(0,0,0, 0.5)
 
 
 
