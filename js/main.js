@@ -71,6 +71,9 @@ function arrival3(){
 
 
 
+
+
+// PRODUCT DETAILS SECTION______________________________________________________________________
 function up_quant(){
 	var $quant = document.getElementById("quant");
 	var quant = parseInt($quant.innerHTML) + 1;
@@ -82,4 +85,7 @@ function down_quant(){
 	var quant = parseInt($quant.innerHTML) - 1;
 	$quant.innerHTML = (quant > 1) ? quant : 1;
 };
+
+// END OF PRODUCT DETAILS SECTION__________________________________________________________
+
 
