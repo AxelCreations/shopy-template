@@ -834,51 +834,40 @@ body h2 span {
   letter-spacing: -1px;
   margin-top: 2.5em;
 }
-#products-section .container .row #filters .filter-price-content .line-filter {
-  border-bottom: 2px solid rgba(128,128,128,0.4);
+#products-section .container .row #filters .filter-price-content #line-filter {
   height: 30px;
   margin-bottom: 2em;
   margin-top: 2em;
   position: relative;
 }
-#products-section .container .row #filters .filter-price-content .line-filter .price-from {
-  left: 7%;
+#products-section .container .row #filters .filter-price-content #line-filter .price-from {
+  left: 3%;
   position: absolute;
   text-align: left;
   top: -5px;
 }
-#products-section .container .row #filters .filter-price-content .line-filter .price-to {
+#products-section .container .row #filters .filter-price-content #line-filter .price-to {
   position: absolute;
-  right: 3%;
+  right: 0;
   top: -5px;
 }
-#products-section .container .row #filters .filter-price-content .line-filter .dot-from {
-  left: 10%;
-  position: absolute;
+#products-section .container .row #filters .filter-price-content #line-filter #slider-range {
+  border: none;
+  background: rgba(128,128,128,0.4);
+  height: 5px;
+  top: 25px;
 }
-#products-section .container .row #filters .filter-price-content .line-filter .from-to {
-  border-bottom: 3px solid #34404b;
-  bottom: -3px;
-  left: 10%;
-  min-width: 5px;
-  padding: 0 0.2em;
-  position: absolute;
-  right: 10%;
-}
-#products-section .container .row #filters .filter-price-content .line-filter .dot-to {
-  position: absolute;
-  right: 10%;
-}
-#products-section .container .row #filters .filter-price-content .line-filter .dot {
+#products-section .container .row #filters .filter-price-content #line-filter #slider-range .ui-slider-range {
   background: #34404b;
-  -webkit-background-clip: content;
-  -moz-background-clip: content;
-  background-clip: content-box;
+  z-index: 0;
+}
+#products-section .container .row #filters .filter-price-content #line-filter #slider-range .ui-slider-handle {
+  background: #34404b;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
-  height: 11px;
-  bottom: -7px;
-  width: 11px;
+  height: 12px;
+  width: 12px;
 }
 #products-section .container .row #filters .filter-price-content .text-filter {
   display: inline-block;

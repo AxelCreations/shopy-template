@@ -74,6 +74,28 @@ function arrival3(){
 
 // PRODUCTS SECTION______________________________________________________________________
 
+$(function(){
+	$sRange = $('#slider-range');
+	$sRange.slider({
+		range: true,
+		min: 0,
+		max: 1100,
+		values: [100, 1000],
+		slide: function (event, ui){
+			$('#inputFrom').val(ui.values[0] + '$');
+			$('#inputTo').val(ui.values[1] + '$');
+			$('#line-filter .price-from')[0].innerHTML = ui.values[0] + '$';
+			$('#line-filter .price-to')[0].innerHTML = ui.values[1] + '$';
+		}
+	});
+	fromValue = $sRange.slider('values', 0);
+	toValue = $sRange.slider('values', 1);
+	$('#inputFrom').val(fromValue + '$');
+	$('#inputTo').val(toValue + '$');
+	$('#line-filter .price-from')[0].innerHTML = fromValue + '$';
+	$('#line-filter .price-to')[0].innerHTML = toValue + '$';
+});
+
 $('.styled-ul li').on('click', function(ev){
 
 	$(this).toggleClass('active');

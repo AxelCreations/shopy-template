@@ -15,6 +15,7 @@ arrival-color-4-blue = "3e81aa"
 arrival-color-4-green = "3dad3d"
 
 naranja = rgb(255, 89, 18)
+negro = rgb(52, 64, 75)
 
 //Normalizing Classes____________________________________________
 ::selection
@@ -705,52 +706,41 @@ body
 						letter-spacing -1px
 						margin-top 2.5em
 
-						.line-filter
-							border-bottom 2px solid rgba(gray, .4)
+						#line-filter
 							height 30px
 							margin-bottom 2em
 							margin-top 2em
 							position relative
 
-
 							.price-from
-								left 7%
+								left 3%
 								position absolute
 								text-align left
 								top -5px
 
 							.price-to
 								position absolute
-								right 3%
+								right 0
 								top -5px
 
-							.dot-from
-								left 10%
-								position absolute
+							#slider-range
+								border none
+								background rgba(gray, 0.4)
+								height 5px
+								top 25px
 
-							.from-to
-								border-bottom 3px solid rgb(52, 64, 75)
-								bottom -3px
-								left 10%
-								min-width 5px
-								padding 0 0.2em
-								position absolute
-								right 10%
+								.ui-slider-range
+									background negro
+									z-index 0
 
-							.dot-to
-								position absolute
-								right 10%
-
-
-							.dot
-								background rgb(52, 64, 75)
-								background-clip content-box
-								border-radius 50%
-								cursor pointer
-								height 11px
-								bottom -7px
-								width 11px
-
+								.ui-slider-handle
+									background negro
+									border none
+									border-radius 50%
+									cursor pointer
+									height 12px
+									width 12px
+								
 						.text-filter
 							display inline-block
 							position relative
@@ -1022,11 +1012,6 @@ body
 				
 				.product
 					margin-bottom 2em
-
-			
-
-
-
 
 
 /*	End of Product Details || Product Show Template Classes
