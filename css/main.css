@@ -1076,6 +1076,13 @@ body h2 span {
 #product-details-section .container .row #product-details .product-view-large {
   min-height: 350px;
 }
+#product-details-section .container .row #product-details .product-view-large img {
+  -webkit-transition: 2s all ease;
+  -moz-transition: 2s all ease;
+  -o-transition: 2s all ease;
+  -ms-transition: 2s all ease;
+  transition: 2s all ease;
+}
 #product-details-section .container .row #product-details .product-view-mini {
   border: 3px solid #fff;
   display: -webkit-box;
