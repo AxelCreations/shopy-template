@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
@@ -119,24 +119,24 @@
                         <div class="filter">
                             <h4>Sizes</h4>
                             <ul class="styled-ul">
-                                <li class="active">Small</li>
-                                <li>Midum</li>
-                                <li>Larg</li>
-                                <li>X Larg</li>
+                                <li class="active"><input type="checkbox" value="Small" checked="checked" id="Small">Small</li>
+                                <li><input type="checkbox" value="Midum" id="Midum">Midum</li>
+                                <li><input type="checkbox" value="Larg" id="Larg">Larg</li>
+                                <li><input type="checkbox" value="X Larg" id="XLarg">X Larg</li>
                             </ul>
                         </div>
 
                         <div class="filter">
                             <h4>Brands</h4>
                             <ul class="styled-ul">
-                                <li class="active">Reebok</li>
-                                <li>Addidas</li>
-                                <li>Nike</li>
-                                <li>Active</li>
+                                <li class="active"><input type="checkbox" value="Reebok" checked="checked" id="Reebok">Reebok</li>
+                                <li><input type="checkbox" value="Adidas" id="Adidas">Adidas</li>
+                                <li><input type="checkbox" value="Nike" id="Nike">Nike</li>
+                                <li><input type="checkbox" value="Active" id="Active">Active</li>
                             </ul>
                         </div>
                     </div>
-                        
+
                         <!-- Products Filtereds -->
                     <div class="col-xs-12 col-sm-7 col-md-9" id="results">
                         <div id="products" class="row">
@@ -244,13 +244,12 @@
                             <!-- Controls -->
                         <div id="product-paging">
                             <div class="col-xs-12 paging-controls-numeric">
-                               <span>1</span>
+                               <span class="active">1</span>
                                <span>2</span>
                                <span>3</span>
                             </div>
                         </div>   
                             <!-- End of Controls -->
-
                     </div>
                 </div>
             </div>

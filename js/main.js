@@ -72,6 +72,41 @@ function arrival3(){
 
 
 
+// PRODUCTS SECTION______________________________________________________________________
+
+$('.styled-ul li').on('click', function(ev){
+
+	$(this).toggleClass('active');
+
+	$chkInput = $(this.getElementsByTagName('input')[0]);
+
+	if($chkInput.attr('checked')){
+		$chkInput.removeAttr('checked');
+		console.log(this);
+	}else{
+		$chkInput.attr('checked', 'checked');
+	};
+});
+
+$('#product-paging span').on('click', function(){
+	for (var i = 0; i < 3; i++) {
+		$('#product-paging span')[i].classList.remove('active');
+	};
+	this.classList.add('active')
+});
+
+
+
+// END OF PRODUCTS SECTION__________________________________________________________
+
+
+
+
+
+
+
+
+
 
 // PRODUCT DETAILS SECTION______________________________________________________________________
 function up_quant(){
